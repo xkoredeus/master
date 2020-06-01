@@ -1,0 +1,88 @@
+<section class="steps section--inner">
+    <div class="container">
+        <div class="section__ttl mb-2">Калькулятор стоимости</div>
+        <div class="steps__subttl">за 5 шагов узнайте стоимость ремонта</div>
+        <div class="steps__in">
+            <div class="row align-items-center">
+                <div class="col-xl-2">
+                    <div class="steps__nav d-flex flex-xl-column justify-content-around justify-content-xl-start">
+                        <div class="steps__nav-item active">
+                            <span>01</span>
+                        </div>
+                        <div class="steps__nav-item">
+                            <span>02</span>
+                        </div>
+                        <div class="steps__nav-item">
+                            <span>03</span>
+                        </div>
+                        <div class="steps__nav-item">
+                            <span>04</span>
+                        </div>
+                        <div class="steps__nav-item">
+                            <span>05</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10">
+                    <div class="steps__slider owl-carousel">
+                        <div class="steps__slider-item mb-4">
+                            <div class="steps__subttl bold">Выберите тип объекта:</div>
+                            <div class="steps__row">
+                                <label class="steps__checkbox-label">
+                                    <input type="checkbox">
+                                    <div class="steps__checkbox">
+                                        <div class="steps__checkbox-circle"></div>
+                                        <div class="steps__checkbox-info">
+                                            <div class="steps__checkbox-image" style="background-image: url('{{root}}assets/img/steps__img--1.jpg')"></div>
+                                            <div class="steps__checkbox-ttl">Новостройка</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="steps__checkbox-label">
+                                    <input type="checkbox">
+                                    <div class="steps__checkbox">
+                                        <div class="steps__checkbox-circle"></div>
+                                        <div class="steps__checkbox-info">
+                                            <div class="steps__checkbox-image" style="background-image: url('{{root}}assets/img/steps__img--2.jpg')"></div>
+                                            <div class="steps__checkbox-ttl">Вторичка</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="steps__slider-item mb-4">
+                            <div class="steps__row row mb-4">
+                                <div class="col-xl-4">
+                                    <div class="steps__subttl bold">Площадь квартиры, м<sup>2</sup></div>
+                                    <div class="range-group d-flex align-items-center w-100">
+                                        <div class="quantity w-100 d-flex justify-content-center mr-3">
+                                            <button type="button" class="quantity-minus"><span>-</span></button>
+                                            <input type="number" min="1" max="150" value="25" class="quantity-num">
+                                            <button type="button" class="quantity-plus"><span>+</span></button>
+                                        </div>
+                                        <div class="range__slider js-range-slider w-100">
+                                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="steps__subttl bold">Класс ремонта</div>
+                                    <div class="d-flex w-100">
+                                        <select class="js-select flex-grow-1">
+                                            <option value="Косметический">Эконом</option>
+                                            <option value="Косметический">Стандарт</option>
+                                            <option value="Косметический">Премиум</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">ЭКОНОМ - простой косметический ремонт.</div>
+                            <div class="mb-2">СТАНДАРТ - ремонт включает электромонтажные и сантехнические работы.</div>
+                            <div>ПРЕМИУМ - в ремонте присутствует монтаж сложных потолочных и настенных конструкций. Дизайнерский проект с применением дорогих отделочных материалов.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

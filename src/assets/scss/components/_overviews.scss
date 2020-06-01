@@ -1,0 +1,42 @@
+.overviews {
+  &__item {
+    font-family: $g-reg;
+    &-top {
+      position: relative;
+      min-height: 250px;
+      margin-bottom: 25px;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      @include cv;
+      @include r(1200) {
+        min-height: 180px;
+        margin-bottom: 15px;
+      }
+      &::before {
+        @include ovl;
+        background-color: $dark;
+        opacity: .8;
+      }
+      &-in {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    &-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      &:hover {
+        transform: translate(-50%, -50%) scale(.9);
+      }
+    }
+    &-ttl {
+      font-size: 19px;
+      color: #fff;
+    }
+  }
+}

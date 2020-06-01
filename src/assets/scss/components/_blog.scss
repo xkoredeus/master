@@ -1,0 +1,38 @@
+.blog {
+  background-color: #fff;
+  &__item {
+    &-image {
+      width: 100%;
+      min-height: 250px;
+      @include cv;
+      margin-bottom: 20px;
+      @include r(1200) {
+        min-height: 180px;
+      }
+    }
+    &-date {
+      font-family: $g-reg;
+      color: #747474;
+      margin-bottom: 10px;
+      svg {
+        fill: #747474;
+      }
+    }
+    &-ttl {
+      font-family: $g-bold;
+      font-size: 23px;
+      color: #171716;
+      margin-bottom: 11px;
+      @include r(1200) {
+        font-size: 18px;
+      }
+    }
+    &-descr {
+      font-family: $g-reg;
+      font-size: 18px;
+      @include r(1200) {
+        font-size: 16px;
+      }
+    }
+  }
+}

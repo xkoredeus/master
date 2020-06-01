@@ -1,0 +1,156 @@
+.owl-carousel {
+  .owl-item {
+    img {
+      width: auto !important
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    width: 160px;
+    top: -60px;
+    right: 30px;
+    counter-reset: dots;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    @include r(1200) {
+      display: none;
+    }
+
+    button.owl-dot {
+      &::before {
+        font-size: 18px;
+        counter-increment:dots;
+        content: counter(dots);
+      }
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+      &.active {
+        color: $red;
+        font-family: $g-bold;
+      }
+    }
+  }
+  .owl-nav {
+    button {
+      &.owl-prev,
+      &.owl-next {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -64px;
+        border-radius: 50%;
+        padding: 0;
+        border: 2px solid $dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include ease;
+        @include r(1200) {
+          top: auto;
+          bottom: -40px;
+        }
+
+        span {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $dark;
+          border-radius: 50%;
+          @include ease;
+        }
+
+        @include r(1200) {
+          width: 30px;
+          height: 30px;
+          span {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        svg {
+          max-width: 17px;
+          max-height: 17px;
+          height: auto;
+          fill: none;
+          stroke: $dark;
+          @include ease;
+          @include r(1200) {
+            max-height: 12px
+          }
+        }
+
+        &:hover {
+          background: linear-gradient(270deg, #FF5150 0%, #ED2B2A 100%);
+          border-color: $red;
+
+          span {
+            background-color: $dark;
+          }
+
+          svg {
+            stroke: #fff;
+          }
+        }
+
+        &.disabled,
+        &.disabled:hover {
+          opacity: 0;
+          cursor: default;
+        }
+      }
+
+      &.owl-prev {
+        right: 190px;
+        @include r(1200) {
+          left: 40%;
+        }
+      }
+
+      &.owl-next {
+        right: 0;
+        @include r(1200) {
+          right: 40%;
+        }
+      }
+    }
+  }
+}
+.slider-arrow {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid $dark;
+  outline: none;
+  @include flex-center;
+  @include ease;
+  overflow: hidden;
+  &::before {
+    @include ovl;
+    background: linear-gradient(270deg, #FF5150 0%, #ED2B2A 100%);
+    @include ease;
+    opacity: 0;
+  }
+  svg {
+    position: relative;
+    stroke: $dark;
+    @include ease;
+  }
+  &:hover {
+    border-color: $red;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    &::before {
+      opacity: 1;
+    }
+    svg {
+      stroke: #fff;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.popup__container {
+  padding: 43px 15px 0;
+  background-color: $tr;
+  @include r(1200) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fancybox-close-small {
+    top: 0;
+    right: 2px;
+    padding: 0;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .popup__wrp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 770px;
+    .popup {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #fff;
+      color: $dark;
+      padding: 30px 25px 30px;
+      text-align: center;
+      overflow: hidden;
+      .section__ttl {
+        line-height: 1
+      }
+      .checkbox {
+        text-align: left;
+        max-width: 410px;
+      }
+    }
+  }
+}

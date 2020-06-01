@@ -1,0 +1,46 @@
+.portfolio {
+  &__image {
+    @include cv;
+    &--main {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      padding: 30px;
+    }
+  }
+  &__btn {
+    width: 43px;
+    height: 43px;
+    padding: 0;
+    @include flex-center;
+  }
+  &__gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    @include r(1200) {
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    &-image {
+      width: 100%;
+      height: 180px;
+      cursor: pointer;
+      @include ease;
+      @include rmin(1200) {
+        &:hover {
+          opacity: .7;
+        }
+      }
+      @include r(1200) {
+        height: 100px;
+      }
+    }
+  }
+  &__descr {
+    font-family: $g-med;
+  }
+}

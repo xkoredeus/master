@@ -1,0 +1,156 @@
+.steps {
+  &__nav {
+    &-item {
+      position: relative;
+      font-size: 30px;
+      color: #888;
+      @include easeinout;
+      @include r(1200) {
+        font-size: 20px;
+      }
+      span {
+        position: relative;
+      }
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: $yel;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(0);
+        @include r(1200) {
+          width: 50px;
+        }
+      }
+      &.active {
+        color: #fff;
+        position: relative;
+        font-family: $g-bold;
+        &::after {
+          transform: translateY(-50%) scale(1);
+        }
+      }
+      //&:hover {
+      //  transform: translateX(5px);
+      //}
+    }
+  }
+  color: #fff;
+  background: url('../img/steps__bg.jpg');
+  @include cv;
+  &__subttl {
+    font-size: 20px;
+    margin-bottom: 30px;
+    @include r(1200) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    &-label {
+      position: relative;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        &:checked + .steps__checkbox {
+          .steps__checkbox-circle {
+            &::before {
+              transform: translate(-50%, -50%) scale(1);
+            }
+          }
+        }
+      }
+      &:hover {
+        .steps__checkbox-info {
+          transform: translateY(-5px);
+        }
+      }
+    }
+    &-circle {
+      position: relative;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+      margin-right: 20px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        background-color: $yel;
+        transform: translate(-50%, -50%) scale(0);
+        @include ease;
+      }
+    }
+    &-info {
+      @include easeinout;
+    }
+    &-image {
+      width: 170px;
+      height: 170px;
+      @include cv;
+      margin-bottom: 10px;
+    }
+    &-ttl {
+      font-family: $g-reg;
+    }
+  }
+  .owl-nav {
+    display: flex;
+    button {
+      &.owl-prev,
+      &.owl-next {
+        position: relative;
+        font-family: $g-reg;
+        width: 268px;
+        height: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        outline: none;
+        border-radius: 40px;
+        padding: 10px 40px !important;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+        color: $dark;
+        background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid $tr;
+        span {
+          width: auto;
+          height: auto;
+          background-color: $tr !important;
+          display: inline-block;
+        }
+        &:hover {
+          color: $dark;
+          background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
+          border: 1px solid #BC7F00;
+          box-shadow: 0 0 35px 0 rgba(255,138,0,1), 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
+        }
+        @include r(1200) {
+          width: auto;
+          padding: 10px 15px !important;
+        }
+      }
+      &.owl-prev {
+        margin-right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.range__slider {
+  height: 5px;
+  background: #FFD600;
+  .ui-widget.ui-widget-content {
+    border-radius: 5px;
+    border: 1px solid $dark;
+    background: $red;
+    width: 100%;
+  }
+  .ui-widget-header {
+    background: $gr;
+  }
+  &-handle {
+    width: 20px !important;
+    height: 20px !important;
+    background: linear-gradient(180deg, #FBD300 0%, #FFA800 100%) !important;
+    border: 1px solid #BC7F00 !important;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.8) !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8px !important;
+    cursor: pointer !important;
+    &:focus {
+      outline: none;
+      span {
+        color: $red
+      }
+    }
+    &.ui-state-active {
+      background: $red;
+      border: 1px solid $red;
+      outline: none;
+      span {
+        background-color: #fff
+      }
+    }
+    span {
+      position: relative;
+      color: $red;
+      font-weight: 600;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+}

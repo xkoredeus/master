@@ -1,0 +1,33 @@
+.view {
+  &__in {
+    color: #fff;
+    padding: 50px 0;
+    background-image: url('../img/view__bg.jpg');
+    @include cv;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px;
+    @include r(1200) {
+      min-height: 260px;
+      padding: 30px 15px;
+      text-align: center;
+    }
+  }
+  &__ttl {
+    font-size: 28px;
+    margin-bottom: 15px;
+    @include r(1200) {
+      font-size: 18px;
+    }
+  }
+  &__btn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+}

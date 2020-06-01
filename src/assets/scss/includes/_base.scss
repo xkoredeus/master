@@ -1,0 +1,52 @@
+@import "mixins";
+@import "fonts";
+@import "common/fonts";
+@import "common/colors";
+@import "common/link";
+@import "common/one-classes";
+@import "common/selections";
+@import "common/states";
+@import "common/inputs";
+@import "common/buttons";
+@import "common/checkbox";
+@import "common/section";
+@import "common/owl-custom";
+@import "common/select2";
+@import "common/quantity";
+@import "common/range-slider";
+@import "common/animations";
+
+html, body {
+  position: relative;
+  font-family: $g-light, Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  color: $dark;
+  background-color: #E5E5E5;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  &.fixed {
+    overflow: hidden;
+    padding-right: 15px;
+  }
+}
+
+.layout {
+  position: relative;
+  overflow: hidden;
+}
+
+.svg-sprite {
+  position: absolute;
+  bottom: 0;
+}
+.fancybox-slide {
+  padding: 0;
+}
+.fancybox-close-small {
+  padding: 0;
+  svg {
+    color: #fff;
+  }
+}

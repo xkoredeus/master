@@ -1,0 +1,64 @@
+.banner {
+  color: #fff;
+  background-image: url('../img/banner__bg.jpg');
+  @include cv;
+  padding-top: 160px;
+  @include r(1200) {
+    padding-top: 60px;
+  }
+}
+.offer {
+  padding: 70px 0;
+  @include r(1200) {
+    padding: 40px 0;
+  }
+  &__col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include rmin(1200) {
+      &:first-child {
+        border-right: 1px solid #888;
+      }
+    }
+  }
+  &__ttl {
+    font-size: 44px;
+    @include r(1200) {
+      font-size: 25px;
+    }
+  }
+  &__in {
+    max-width: 500px;
+  }
+  &__descr {
+    font-size: 22px;
+    margin-bottom: 30px;
+    @include r(1200) {
+      font-size: 18px;
+    }
+  }
+  &__subttl {
+    font-size: 28px;
+    font-family: $g-bold;
+    margin-bottom: 30px;
+    @include r(1200) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  &__form {
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .select2-container--default {
+      max-width: 270px;
+    }
+    &-tel {
+      width: 100%;
+      max-width: 270px;
+    }
+  }
+}

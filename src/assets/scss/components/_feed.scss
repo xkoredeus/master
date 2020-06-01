@@ -1,0 +1,10 @@
+.feed {
+  background-image: url('../img/feed__bg.jpg');
+  @include cv;
+  &__subttl {
+    font-size: 26px;
+    @include r(1200) {
+      font-size: 18px;
+    }
+  }
+}

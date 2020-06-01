@@ -1,0 +1,62 @@
+<section class="price section--inner pb-0">
+    <div class="container">
+        <div class="section__ttl">Цены на ремонт</div>
+        <div class="price-tabs tabs">
+            <div class="tabs__list row">
+                <div class="col-xl-3 price-tabs__item tabs__list-item"><span>Косметический</span></div>
+                <div class="col-xl-3 price-tabs__item tabs__list-item"><span>Капитальный</span></div>
+                <div class="col-xl-3 price-tabs__item tabs__list-item"><span>Ремонт под ключ</span></div>
+                <div class="col-xl-3 price-tabs__item tabs__list-item"><span>Евроремонт</span></div>
+            </div>
+            <div class="tabs__container">
+                <div class="tabs__content-item">
+                    <form class="row no-gutters" method="post">
+                        <div class="col-xl-6 order-2 order-xl-1">
+                            <div class="price__image h-100" style="background-image: url('{{root}}assets/img/price__image--1.jpg')">
+                                <div class="price__image-bot">
+                                    <div class="price__image-ttl w-100 mb-3">Площадь объекта</div>
+                                    <div class="range-group d-flex align-items-center w-100">
+                                        <div class="quantity w-100 d-flex justify-content-center mr-5">
+                                            <button type="button" class="quantity-minus"><span>-</span></button>
+                                            <input type="number" min="1" max="150" value="25" class="quantity-num">
+                                            <button type="button" class="quantity-plus"><span>+</span></button>
+                                        </div>
+                                        <div class="range__slider js-range-slider w-100">
+                                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 order-1 order-xl-2">
+                            <div class="price__descr">
+                                <div class="section__subttl">Ремонтные работы</div>
+                                <div class="price__descr-in">
+                                    <div class="mb-1 mb-xl-2 bold">Стены:</div>
+                                    <div class="mb-3 mb-xl-4">Демонтажные работы по снятию старой отделки со стен <br> Шпаклевка
+                                        <br> Поклейка обоев</div>
+                                    <div class="mb-1 mb-xl-2 bold">Пол:</div>
+                                    <div class="mb-3 mb-xl-4">Укладка ламината, настил линолеума</div>
+                                    <div class="mb-1 mb-xl-2 bold">Потолок:</div>
+                                    <div class="mb-3 mb-xl-4">Установка натяжных потолка или окраска потолка в 2 слоя</div>
+                                    <div class="mb-1 mb-xl-2 bold">Электрика:</div>
+                                    <div class="mb-3 mb-xl-4">Замена светильников, выключателей и розеток</div>
+                                    <div class="mb-1 mb-xl-2 bold">Ванная:</div>
+                                    <div class="mb-3 mb-xl-4">Укладка плитки на пол <br>Установка стеновых панелей <br>Монтаж и замена сантехники.</div>
+                                </div>
+                                <div class="section__subttl mb-0 mt-3">Цена: от 2100 руб/м<sup>2</sup></div>
+                            </div>
+                            <div class="price__bot">
+                                <div class="price__bot-item mb-4">
+                                    <div class="price__bot-ttl mb-1">Ваш телефон:</div>
+                                    <input class="price__bot-tel js-tel" type="tel" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <button class="btn btn--wt w-100" type="submit">Получить расчет</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

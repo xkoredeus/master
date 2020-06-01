@@ -1,0 +1,138 @@
+.price {
+  .section__ttl {
+    text-align: center;
+  }
+  &-tabs {
+    .tabs__list {
+      margin-bottom: 30px;
+      @include r(1200) {
+        margin-bottom: 15px;
+      }
+      &-item {
+        cursor: pointer;
+        @include ease;
+        &:hover {
+          opacity: .8;
+        }
+        span {
+          position: relative;
+          @include easeinout;
+          &::after,
+          &::before {
+            position: absolute;
+            content: '';
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #292929;
+            width: 12px;
+            height: 3px;
+            @include easeinout;
+          }
+          &::before {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+      &.active {
+        span {
+          color: red;
+          &::after,
+          &::before {
+            background-color: $red;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      }
+    }
+    &__item {
+      font-size: 25px;
+      font-family: $g-bold;
+      @include r(1200) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    @include cv;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    @include r(1200) {
+      padding: 20px;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 220px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.61%, #000000 90.22%);
+      opacity: .7;
+    }
+    &-bot {
+      position: relative;
+    }
+    &-ttl {
+      color: #fff;
+      font-family: $g-reg;
+    }
+  }
+  &__descr {
+    background-color: #fff;
+    padding: 30px;
+    @include r(1200) {
+      padding: 20px;
+    }
+    &-in {
+      font-size: 19px;
+      max-height: 400px;
+      overflow-y: auto;
+      @include r(1200) {
+        font-size: 16px;
+      }
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #888888;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #FBD300 0%, #FFA800 100%);
+        border: 1px solid #BC7F00;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.8);
+        border-radius: 39.5364px;
+      }
+    }
+  }
+  &__bot {
+    color: #fff;
+    background: #292929;
+    padding: 30px;
+    @include r(1200) {
+      padding: 20px;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include r(1200) {
+        justify-content: flex-start;
+      }
+    }
+    &-tel {
+      flex-basis: 350px;
+      @include r(1200) {
+        flex-basis: 300px;
+        margin-left: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.test {
+  overflow: hidden;
+  .container {
+    position: relative;
+  }
+  &__decor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &--1 {
+      left: -200px;
+    }
+    &--2 {
+      right: -200px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  &__info {
+    font-size: 19px;
+    padding: 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    @include r(1200) {
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+    }
+    @include r(600) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-img {
+      @include cv;
+      width: 100%;
+      max-width: 150px;
+      height: 200px;
+      margin-right: 30px;
+    }
+  }
+  &__video {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

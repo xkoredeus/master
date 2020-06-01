@@ -1,0 +1,27 @@
+.section {
+  &--inner {
+    padding: 60px 0;
+    @include r(1200) {
+      padding: 35px 0
+    }
+  }
+  &__ttl {
+    font-size: 38px;
+    font-family: $g-bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    @include r(1200) {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+  &__subttl {
+    font-size: 28px;
+    font-family: $g-bold;
+    margin-bottom: 20px;
+    @include r(1200) {
+      font-size: 18px;
+      margin-bottom: 14px;
+    }
+  }
+}

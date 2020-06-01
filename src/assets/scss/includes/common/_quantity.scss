@@ -1,0 +1,49 @@
+.quantity {
+  position: relative;
+  min-width: 100px;
+  max-width: 120px;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  input {
+    font-family: $g-bold;
+    text-align: center;
+    padding: 12px 25px;
+    background: none;
+    border: none;
+    width: 100%;
+    border: none;
+  }
+  &-num {
+    text-align: center;
+  }
+  &-minus,
+  &-plus {
+    font-size: 20px;
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    transform: translate(0,-50%);
+    line-height: 0;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &-minus {
+    left: 5px;
+    color: #fff;
+  }
+  &-plus {
+    right: 5px;
+    color: #fff;
+  }
+}
+
+

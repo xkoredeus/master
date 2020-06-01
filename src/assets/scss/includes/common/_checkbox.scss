@@ -1,0 +1,65 @@
+.checkbox {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+  &__text {
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    @include r(1200) {
+      font-size: 12px
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      border: 1px solid $dark;
+      background: #fff;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      left: 2px;
+      width: 12px;
+      height: 12px;
+      background-color: $dark;
+      border-radius: 2px;
+      opacity: 0;
+      transform: scale(0);
+      transition: 0.3s;
+      a {
+        color: $dark;
+        text-decoration: underline;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+  &:checked + .checkbox__text,
+  &:checked + .checkbox__text {
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &::before {
+      background-color: #fff;
+    }
+  }
+}

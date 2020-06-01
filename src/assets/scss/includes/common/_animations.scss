@@ -1,0 +1,11 @@
+/* fancybox custom animation */
+.fancybox-fx-slide-in-in.fancybox-slide--next,
+.fancybox-fx-slide-in-in.fancybox-slide--previous {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-in.fancybox-slide--current {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
