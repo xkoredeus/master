@@ -35,7 +35,7 @@
         }
       &.active {
         span {
-          color: red;
+          color: $red;
           &::after,
           &::before {
             background-color: $red;

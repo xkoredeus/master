@@ -43,4 +43,22 @@
   &__descr {
     font-family: $g-med;
   }
+  &--renovation {
+    .portfolio__image--main {
+      font-size: 19px;
+      position: relative;
+      @include r(1200) {
+        font-size: 15px;
+      }
+      &::before {
+        @include ovl;
+        background-color: $dark;
+        opacity: .8;
+      }
+      & > * {
+        position: relative;
+      }
+    }
+
+  }
 }

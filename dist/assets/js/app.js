@@ -147,6 +147,15 @@ $(() => {
         $(this).siblings('.header__nav-drop').slideToggle();
     })
 });
+$(() => {
+    $('.questions__item-top').on('click', function () {
+        $(this)
+            .siblings('.questions__item-answer')
+            .slideToggle()
+            .parents('.questions__item')
+            .addClass('active')
+    })
+});
 
 
 

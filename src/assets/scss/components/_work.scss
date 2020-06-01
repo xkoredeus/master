@@ -69,4 +69,17 @@
       }
     }
   }
+  &--renovation {
+    .work__item {
+      &-ttl {
+        max-width: 70px;
+      }
+      svg {
+        margin-right: 15px;
+        @include r(1200) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

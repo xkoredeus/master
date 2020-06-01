@@ -1,0 +1,6 @@
+.seo-block {
+  font-size: 19px;
+  @include r(1200) {
+    font-size: 14px;
+  }
+}

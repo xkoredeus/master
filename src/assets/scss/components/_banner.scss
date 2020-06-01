@@ -24,6 +24,7 @@
   }
   &__ttl {
     font-size: 44px;
+    line-height: 1.2;
     @include r(1200) {
       font-size: 25px;
     }
@@ -47,6 +48,21 @@
       margin-bottom: 15px;
     }
   }
+  &__test {
+    font-size: 24px;
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &-icon {
+      min-width: 50px;
+      width: 50px;
+      height: 50px;
+      @include flex-center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+  }
   &__form {
     &-item {
       display: flex;
@@ -59,6 +75,16 @@
     &-tel {
       width: 100%;
       max-width: 270px;
+    }
+    &-period {
+      font-size: 19px;
+      font-family: $g-bold;
+      color: $yel;
+      width: 100%;
+      max-width: 270px;
+      @include r(1200) {
+        font-size: 15px;
+      }
     }
   }
 }

@@ -1,0 +1,134 @@
+<!-- -&#45;&#45;-->
+<!--layout: inner-->
+<!-- -&#45;&#45;-->
+<!-- Uses layouts/inner.html as the template -->
+<section class="banner">
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offer__col mb-4 mb-xl-0">
+                    <div class="section__ttl offer__ttl">Евроремонт под&nbsp;ключ
+                        в&nbsp;Самаре <br>
+                        от&nbsp;1&nbsp;100&nbsp;руб/м<sup>2</sup></div>
+                    <div class="offer__in h-100 d-flex flex-column justify-content-between">
+                        <div class="offer__test">
+                            <div class="offer__test-item d-flex align-items-center">
+                                <div class="offer__test-icon">
+                                    <svg width="26" height="34">
+                                        <use xlink:href="#offer__test-icon--1"></use>
+                                    </svg>
+                                </div>
+                                <span class="ml-3 ml-xl-4">
+                                    Гарантия на работу 3 года
+                                </span>
+                            </div>
+                            <div class="offer__test-item d-flex align-items-center">
+                                <div class="offer__test-icon">
+                                    <svg width="27" height="22">
+                                        <use xlink:href="#offer__test-icon--2"></use>
+                                    </svg>
+                                </div>
+                                <span class="ml-3 ml-xl-4">
+                                    Гарантия качества, работы согласно СНИПам и ГОСТам
+                                </span>
+                            </div>
+                            <div class="offer__test-item d-flex align-items-center">
+                                <div class="offer__test-icon">
+                                    <svg width="30" height="30">
+                                        <use xlink:href="#offer__test-icon--3"></use>
+                                    </svg>
+                                </div>
+                                <span class="ml-3 ml-xl-4">Никаких предоплат до заключения договора</span>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn--yel w-100" data-src="#popup_call" data-fancybox type="button">Хочу начать ремонт без предоплаты</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 offer__col">
+                    <div class="offer__in ml-xl-auto">
+                        <div class="section__ttl offer__ttl">Расчитать стоимость ремонта</div>
+                        <form class="offer__form" method="post">
+                            <div class="offer__form-item mb-3">
+                                <div class="offer__form-ttl mb-2">Тип объекта:</div>
+                                <select class="js-select">
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                    <option value="Вторичка">Вторичка</option>
+                                </select>
+                            </div>
+                            <div class="offer__form-item mb-3">
+                                <div class="offer__form-ttl mb-2">Вид ремонта:</div>
+                                <select class="js-select">
+                                    <option value="Косметический">Косметический</option>
+                                    <option value="Косметический">Косметический</option>
+                                </select>
+                            </div>
+                            <div class="offer__form-item flex-wrap mb-3">
+                                <div class="offer__form-ttl w-100 mb-3">Площадь объекта</div>
+                                <div class="range-group d-flex align-items-center w-100">
+                                    <div class="quantity w-100 d-flex justify-content-center mr-5">
+                                        <button type="button" class="quantity-minus"><span>-</span></button>
+                                        <input type="number" min="1" max="150" value="25" class="quantity-num">
+                                        <button type="button" class="quantity-plus"><span>+</span></button>
+                                    </div>
+                                    <div class="range__slider js-range-slider w-100">
+                                        <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offer__form-item mb-2 mb-xl-3">
+                                <div class="offer__form-ttl">Срок работ:</div>
+                                <div class="offer__form-period">от 20 до 32 дней</div>
+                            </div>
+                            <div class="offer__form-item mb-3 mb-xl-5">
+                                <div class="offer__form-ttl mb-2">Ваш телефон:</div>
+                                <input class="offer__form-tel js-tel" type="tel" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <button class="btn btn--yel w-100" type="submit">Получить стоимость</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{> about--renovation}}
+{{> work--renovation}}
+{{> portfolio--renovation}}
+<section class="section--inner">
+    <div class="container">
+        <div class="section__ttl">Калькулятор ремонта</div>
+    </div>
+</section>
+{{> test--renovation}}
+{{> benefits}}
+{{> questions}}
+<section class="blog section--inner">
+    <div class="container">
+        <div class="tac">
+            <div class="section__ttl">Новые статьи</div>
+        </div>
+        <div class="blog__in row">
+            <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
+                {{> blog__item}}
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
+                {{> blog__item}}
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
+                {{> blog__item}}
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="btn btn--big btn--yel" href="#">Смотреть все записи</a>
+        </div>
+    </div>
+</section>
+{{> seo-block}}
