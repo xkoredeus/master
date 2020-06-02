@@ -13,880 +13,205 @@
 
 <body>
     <div class="layout">
-        <div class="header">
-            <div class="container">
-                <div class="header__top d-flex justify-content-between align-items-center">
-                    <div class="header__soc d-none d-xl-flex align-items-center">
-                        <a class="header__soc-link" href="#">
-                            <svg width="8" height="16">
-                               <use xlink:href="#fb"></use>
+        <div class="banner banner--inner">
+            <div class="header">
+                <div class="container">
+                    <div class="header__top d-flex justify-content-between align-items-center">
+                        <div class="header__soc d-none d-xl-flex align-items-center">
+                            <a class="header__soc-link" href="#">
+                                <svg width="8" height="16">
+                                   <use xlink:href="#fb"></use>
+                                </svg>
+                            </a>
+                            <a class="header__soc-link" href="#">
+                                <svg width="23" height="16">
+                                   <use xlink:href="#yu"></use>
+                                </svg>
+                            </a>
+                            <a class="header__soc-link" href="#">
+                                <svg width="16" height="16">
+                                   <use xlink:href="#in"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__geo d-none d-xl-flex align-items-center">
+                            <svg width="14" height="16">
+                                <use xlink:href="#geo"></use>
                             </svg>
-                        </a>
-                        <a class="header__soc-link" href="#">
-                            <svg width="23" height="16">
-                               <use xlink:href="#yu"></use>
-                            </svg>
-                        </a>
-                        <a class="header__soc-link" href="#">
-                            <svg width="16" height="16">
-                               <use xlink:href="#in"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="header__geo d-none d-xl-flex align-items-center">
-                        <svg width="14" height="16">
-                            <use xlink:href="#geo"></use>
-                        </svg>
-                        <span class="ml-2">г. Самара, ул. Ленина 01</span>
-                    </div>
-                    <a class="header__top-logo" href="#">
-                        <svg width="123" height="48">
-                            <use xlink:href="#logo"></use>
-                        </svg>
-                    </a>
-                    <a class="header__tel d-none d-sm-flex align-items-center" href="tel:88001001010">
-                        <svg width="17" height="16">
-                            <use xlink:href="#tel"></use>
-                        </svg>
-                        <span class="ml-2">8 800 100 10 10</span>
-                    </a>
-                    <button class="btn btn--red" data-src="#popup_call" data-fancybox type="button">Заказать звонок</button>
-                    <button class="header__hamburger" type="button" data-src="#mobile-menu" data-fancybox><span></span></button>
-                </div>
-                <div class="header__bot" id="mobile-menu">
-                    <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
-                        <a class="header__bot-logo" href="#">
-                            <svg width="113" height="45">
+                            <span class="ml-2">г. Самара, ул. Ленина 01</span>
+                        </div>
+                        <a class="header__top-logo" href="#">
+                            <svg width="123" height="48">
                                 <use xlink:href="#logo"></use>
                             </svg>
                         </a>
-                        <hr>
-                        <nav class="header__nav d-flex flex-column align-items-xl-center flex-xl-row justify-content-around flex-grow-1">
-                            <div class="header__nav-link-wrp">
-                                <a class="header__nav-link" href="#">
-                                    <span>Главная</span>
-                                </a>
-                            </div>
-                            <div class="header__nav-link-wrp header__nav-link-wrp--has-drop">
-                                <a class="header__nav-link" href="#">
-                                    <span>Услуги</span>
-                                </a>
-                                <div class="header__nav-drop">
-                                    <a class="header__nav-drop-link" href="#">Ремонт в новостройке</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт под ключ</a>
-                                    <a class="header__nav-drop-link" href="#">Евроремонт</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт офиса</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт коттеджа</a>
-                                    <a class="header__nav-drop-link" href="#">Черновой ремонт</a>
-                                    <a class="header__nav-drop-link" href="#">Капитальный ремонт</a>
-                                    <a class="header__nav-drop-link" href="#">Дизайнерский ремонт</a>
-                                    <a class="header__nav-drop-link" href="#">Элитный ремонт</a>
-                                </div>
-                            </div>
-                            <div class="header__nav-link-wrp header__nav-link-wrp--has-drop">
-                                <a class="header__nav-link" href="#">
-                                    <span>Цены</span>
-                                </a>
-                                <div class="header__nav-drop">
-                                    <a class="header__nav-drop-link" href="#">Ремонт в новостройке</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт под ключ</a>
-                                    <a class="header__nav-drop-link" href="#">Евроремонт</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт офиса</a>
-                                    <a class="header__nav-drop-link" href="#">Ремонт коттеджа</a>
-                                </div>
-                            </div>
-                            <div class="header__nav-link-wrp">
-                                <a class="header__nav-link" href="#">
-                                    <span>Команда</span>
-                                </a>
-                            </div>
-                            <div class="header__nav-link-wrp">
-                                <a class="header__nav-link" href="#">
-                                    <span>Контакты</span>
-                                </a>
-                            </div>
-                        </nav>
-                        <hr>
-                        <div class="d-flex d-xl-none flex-column align-items-center">
-                            <div class="header__soc d-flex align-items-center mb-3">
-                                <a class="header__soc-link" href="#">
-                                    <svg width="8" height="16">
-                                        <use xlink:href="#fb"></use>
-                                    </svg>
-                                </a>
-                                <a class="header__soc-link" href="#">
-                                    <svg width="23" height="16">
-                                        <use xlink:href="#yu"></use>
-                                    </svg>
-                                </a>
-                                <a class="header__soc-link" href="#">
-                                    <svg width="16" height="16">
-                                        <use xlink:href="#in"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="header__geo d-flex align-items-center mb-3">
-                                <svg width="14" height="16">
-                                    <use xlink:href="#geo"></use>
+                        <a class="header__tel d-none d-sm-flex align-items-center" href="tel:88001001010">
+                            <svg width="17" height="16">
+                                <use xlink:href="#tel"></use>
+                            </svg>
+                            <span class="ml-2">8 800 100 10 10</span>
+                        </a>
+                        <button class="btn btn--red" data-src="#popup_call" data-fancybox type="button">Заказать звонок</button>
+                        <button class="header__hamburger" type="button" data-src="#mobile-menu" data-fancybox><span></span></button>
+                    </div>
+                    <div class="header__bot" id="mobile-menu">
+                        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+                            <a class="header__bot-logo" href="#">
+                                <svg width="113" height="45">
+                                    <use xlink:href="#logo"></use>
                                 </svg>
-                                <span class="ml-2 wt">г. Самара, ул. Ленина 01</span>
-                            </div>
-                            <a class="header__tel d-flex align-items-center" href="tel:88001001010">
-                                <svg width="17" height="16">
-                                    <use xlink:href="#tel"></use>
-                                </svg>
-                                <span class="ml-2">8 800 100 10 10</span>
                             </a>
+                            <hr>
+                            <nav class="header__nav d-flex flex-column align-items-xl-center flex-xl-row justify-content-around flex-grow-1">
+                                <div class="header__nav-link-wrp">
+                                    <a class="header__nav-link" href="#">
+                                        <span>Главная</span>
+                                    </a>
+                                </div>
+                                <div class="header__nav-link-wrp header__nav-link-wrp--has-drop">
+                                    <a class="header__nav-link" href="#">
+                                        <span>Услуги</span>
+                                    </a>
+                                    <div class="header__nav-drop">
+                                        <a class="header__nav-drop-link" href="#">Ремонт в новостройке</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт под ключ</a>
+                                        <a class="header__nav-drop-link" href="#">Евроремонт</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт офиса</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт коттеджа</a>
+                                        <a class="header__nav-drop-link" href="#">Черновой ремонт</a>
+                                        <a class="header__nav-drop-link" href="#">Капитальный ремонт</a>
+                                        <a class="header__nav-drop-link" href="#">Дизайнерский ремонт</a>
+                                        <a class="header__nav-drop-link" href="#">Элитный ремонт</a>
+                                    </div>
+                                </div>
+                                <div class="header__nav-link-wrp header__nav-link-wrp--has-drop">
+                                    <a class="header__nav-link" href="#">
+                                        <span>Цены</span>
+                                    </a>
+                                    <div class="header__nav-drop">
+                                        <a class="header__nav-drop-link" href="#">Ремонт в новостройке</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт под ключ</a>
+                                        <a class="header__nav-drop-link" href="#">Евроремонт</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт офиса</a>
+                                        <a class="header__nav-drop-link" href="#">Ремонт коттеджа</a>
+                                    </div>
+                                </div>
+                                <div class="header__nav-link-wrp">
+                                    <a class="header__nav-link" href="#">
+                                        <span>Команда</span>
+                                    </a>
+                                </div>
+                                <div class="header__nav-link-wrp">
+                                    <a class="header__nav-link" href="#">
+                                        <span>Контакты</span>
+                                    </a>
+                                </div>
+                            </nav>
+                            <hr>
+                            <div class="d-flex d-xl-none flex-column align-items-center">
+                                <div class="header__soc d-flex align-items-center mb-3">
+                                    <a class="header__soc-link" href="#">
+                                        <svg width="8" height="16">
+                                            <use xlink:href="#fb"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="header__soc-link" href="#">
+                                        <svg width="23" height="16">
+                                            <use xlink:href="#yu"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="header__soc-link" href="#">
+                                        <svg width="16" height="16">
+                                            <use xlink:href="#in"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="header__geo d-flex align-items-center mb-3">
+                                    <svg width="14" height="16">
+                                        <use xlink:href="#geo"></use>
+                                    </svg>
+                                    <span class="ml-2 wt">г. Самара, ул. Ленина 01</span>
+                                </div>
+                                <a class="header__tel d-flex align-items-center" href="tel:88001001010">
+                                    <svg width="17" height="16">
+                                        <use xlink:href="#tel"></use>
+                                    </svg>
+                                    <span class="ml-2">8 800 100 10 10</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>        <section class="banner">
-            <div class="offer">
+            </div>        </div>
+        <div class="layout__in">
+            <div class="container">
+                <ul class="crumbs">
+                	<li>
+                		<a href="#">Главная</a>
+                	</li>
+                	<li>
+                		<span>Статьи</span>
+                	</li>
+                </ul>            </div>
+            <section class="blog__banner section--inner" style="background-image: url('assets/img/blog__bg.jpg');">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 offer__col mb-4 mb-xl-0">
-                            <div class="section__ttl offer__ttl">Евроремонт под&nbsp;ключ
-                                в&nbsp;Самаре <br>
-                                от&nbsp;1&nbsp;100&nbsp;руб/м<sup>2</sup></div>
-                            <div class="offer__in h-100 d-flex flex-column justify-content-between">
-                                <div class="offer__test">
-                                    <div class="offer__test-item d-flex align-items-center">
-                                        <div class="offer__test-icon">
-                                            <svg width="26" height="34">
-                                                <use xlink:href="#offer__test-icon--1"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 ml-xl-4">
-                                            Гарантия на работу 3 года
-                                        </span>
-                                    </div>
-                                    <div class="offer__test-item d-flex align-items-center">
-                                        <div class="offer__test-icon">
-                                            <svg width="27" height="22">
-                                                <use xlink:href="#offer__test-icon--2"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 ml-xl-4">
-                                            Гарантия качества, работы согласно СНИПам и ГОСТам
-                                        </span>
-                                    </div>
-                                    <div class="offer__test-item d-flex align-items-center">
-                                        <div class="offer__test-icon">
-                                            <svg width="30" height="30">
-                                                <use xlink:href="#offer__test-icon--3"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 ml-xl-4">Никаких предоплат до заключения договора</span>
-                                    </div>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn--yel btn--big d-flex justify-content-center align-items-center" href="#">
+                            <svg width="28" height="9">
+                                <use xlink:href="#steps__arrow--prev"></use>
+                            </svg>
+                            <span class="ml-2">Назад</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <!-- Uses layouts/inner.html as the template -->
+                <section class="section--inner pt-2">
+                    <div class="blog__item-date d-flex align-items-center mb-2 mb-xl-3">
+                        <svg width="19" height="23">
+                            <use xlink:href="#calendar"></use>
+                        </svg>
+                        <span class="ml-2">01 апрель 2020</span>
+                    </div>
+                    <h1 class="section__ttl mb-2 mb-xl-3">Как правильно выбрать подрячика</h1>
+                        <div class="reg">
+                            <p>Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. С другой стороны сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
+                            <p>Не следует, однако забывать, что укрепление и развитие структуры играет важную роль в формировании дальнейших направлений развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. Таким образом укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.</p>
+                            <div class="row mb-xl-3">
+                                <div class="col-sm-6 h-100 mb-3 mb-xl-0">
+                                    <div class="blog__article-image blog__article-image--big" style="background-image: url('assets/img/blog__image--2.jpg');"></div>
                                 </div>
-                                <div>
-                                    <button class="btn btn--yel w-100" data-src="#popup_call" data-fancybox type="button">Хочу начать ремонт без предоплаты</button>
+                                <div class="col-sm-6">
+                                    <p class="mb-xl-0">Равным образом реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт рамки и место обучения кадров в значительной степени обуславливает создание соответствующий условий активизации. Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития. Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа новых предложений. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации систем массового участия.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-6 offer__col">
-                            <div class="offer__in ml-xl-auto">
-                                <div class="section__ttl offer__ttl">Расчитать стоимость ремонта</div>
-                                <form class="offer__form" method="post">
-                                    <div class="offer__form-item mb-3">
-                                        <div class="offer__form-ttl mb-2">Тип объекта:</div>
-                                        <select class="js-select">
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                            <option value="Вторичка">Вторичка</option>
-                                        </select>
-                                    </div>
-                                    <div class="offer__form-item mb-3">
-                                        <div class="offer__form-ttl mb-2">Вид ремонта:</div>
-                                        <select class="js-select">
-                                            <option value="Косметический">Косметический</option>
-                                            <option value="Косметический">Косметический</option>
-                                        </select>
-                                    </div>
-                                    <div class="offer__form-item flex-wrap mb-3">
-                                        <div class="offer__form-ttl w-100 mb-3">Площадь объекта</div>
-                                        <div class="range-group d-flex align-items-center w-100">
-                                            <div class="quantity w-100 d-flex justify-content-center mr-5">
-                                                <button type="button" class="quantity-minus"><span>-</span></button>
-                                                <input type="number" min="1" max="150" value="25" class="quantity-num">
-                                                <button type="button" class="quantity-plus"><span>+</span></button>
-                                            </div>
-                                            <div class="range__slider js-range-slider w-100">
-                                                <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
-                                            </div>
+                            <p>Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. С другой стороны сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
+                            <div class="row mb-xl-3">
+                                <div class="col-sm-6">
+                                    <p class="mb-xl-0">Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. С другой стороны сложившаяся структура организации требуют от нас анализа дальнейших направлений развития.</p>
+                                </div>
+                                <div class="col-sm-6 h-100 mb-3 mb-xl-0">
+                                    <div class="blog__article-image" style="background-image: url('assets/img/blog__image--3.jpg');">
+                                        <div class="d-flex justify-content-center align-items-center h-100">
+                                            <button type="button" class="btn--watch overviews__item-btn">
+                                                <img src="assets/img/view__button.png" alt="watch__button.png">
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="offer__form-item mb-2 mb-xl-3">
-                                        <div class="offer__form-ttl">Срок работ:</div>
-                                        <div class="offer__form-period">от 20 до 32 дней</div>
-                                    </div>
-                                    <div class="offer__form-item mb-3 mb-xl-5">
-                                        <div class="offer__form-ttl mb-2">Ваш телефон:</div>
-                                        <input class="offer__form-tel js-tel" type="tel" placeholder="+7 (___) ___-__-__">
-                                    </div>
-                                    <button class="btn btn--yel w-100" type="submit">Получить стоимость</button>
-                                </form>
+                                </div>
                             </div>
+                            <h2 class="section__subttl">Подзаголовок</h2>
+                            <p>Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. С другой стороны сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
+                            <p>Не следует, однако забывать, что укрепление и развитие структуры играет важную роль в формировании дальнейших направлений развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. Таким образом укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.</p>
                         </div>
                     </div>
-                </div>
+                
+                </section>
+                
             </div>
-        </section>
-        <section class="about section--inner">
-            <div class="container">
-                <div class="section__ttl">Почему мы?</div>
-                <div class="row">
-                    <div class="col-xl-3 col-6 mb-3 mb-xl-0">
-                        <div class="about__item">
-                            <div class="about__item-num">
-                                <span>15</span>
-                            </div>
-                            <div class="about__item-ttl">Уверенных лет&nbsp;на&nbsp;рынке</div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6 mb-3 mb-xl-0">
-                        <div class="about__item">
-                            <div class="about__item-num">
-                                <span>20</span>
-                            </div>
-                            <div class="about__item-ttl">Специалистов по&nbsp;рынке</div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6 mb-3 mb-xl-0">
-                        <div class="about__item">
-                            <div class="about__item-num">
-                                <span>500</span>
-                            </div>
-                            <div class="about__item-ttl">Квартир отремонтировано</div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6 mb-3 mb-xl-0">
-                        <div class="about__item">
-                            <div class="about__item-num">
-                                <span>210</span>
-                            </div>
-                            <div class="about__item-ttl">Коттеджей отремонтировано</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><section class="work work--renovation section--inner">
-            <div class="container">
-                <div class="section__ttl">Как мы работаем?</div>
-                <div class="row pt-3">
-                    <div class="col-xl-4 col-sm-6 mb-xl-5">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>1</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg width="80" height="70">
-                                        <use xlink:href="#work__icon--6 "></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Осмотр объекта</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6 mb-xl-5">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>2</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg width="57" height="70">
-                                        <use xlink:href="#work__icon--6"></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Составление сметы</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6 mb-xl-5">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>3</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg width="70" height="70">
-                                        <use xlink:href="#work__icon--7"></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Выполнения ремонта</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>4</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg width="58" height="64">
-                                        <use xlink:href="#work__icon--8"></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Подписание договора</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>5</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg  width="70" height="66">
-                                        <use xlink:href="#work__icon--9"></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Завершение ремонта</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="work__item">
-                            <div class="work__item-top">
-                                <div class="work__item-num">
-                                    <span>6</span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <svg width="65" height="66">
-                                        <use xlink:href="#work__icon--10"></use>
-                                    </svg>
-                                    <div class="work__item-ttl">Приемка квартиры</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><section class="portfolio portfolio--renovation section--inner">
-            <div class="container">
-                <div class="row mb-4 align-items-center">
-                    <div class="col-xl-8">
-                        <div class="section__ttl mb-0">Наши выполненные работы</div>
-                    </div>
-                </div>
-                <div class="portfolio__slider owl-carousel mb-5">
-                    <div class="portfolio__item">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="portfolio__image portfolio__image--main" style="background-image: url('assets/img/portfolio__image--1.jpg')">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div class="section__ttl wt">Евроремонт 3-х комнатной квартиры</div>
-                                        <div class="wt mb-2 mb-xl-4">
-                                            <div class="bold mb-2 mb-xl-4">Задача:</div>
-                                            <div>Грунтовка стен и пола</div>
-                                            <div>Гидроизоляция пола смесью</div>
-                                            <div>Штукатурка стен по маякам</div>
-                                            <div>Шпатлевка стен</div>
-                                            <div>Оклейка стен обоями</div>
-                                            <div>Облицовка стен плиткой</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Площадь</span> объекта: 55 м2</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Сроки:</span> 34 дня</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Стоимость:</span> 115 000 руб</div>
-                                        </div>
-        
-                                        <button class="btn portfolio__btn" type="button" data-fancybox data-src="assets/img/portfolio__image--1.jpg">
-                                            <svg width="22" height="16">
-                                                <use xlink:href="#camera"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="portfolio__gal mb-0">
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--2.jpg" style="background-image: url('assets/img/portfolio__image--2.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--3.jpg" style="background-image: url('assets/img/portfolio__image--3.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__item">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="portfolio__image portfolio__image--main" style="background-image: url('assets/img/portfolio__image--1.jpg')">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div class="section__ttl wt">Евроремонт 3-х комнатной квартиры</div>
-                                        <div class="wt mb-2 mb-xl-4">
-                                            <div class="bold mb-2 mb-xl-4">Задача:</div>
-                                            <div>Грунтовка стен и пола</div>
-                                            <div>Гидроизоляция пола смесью</div>
-                                            <div>Штукатурка стен по маякам</div>
-                                            <div>Шпатлевка стен</div>
-                                            <div>Оклейка стен обоями</div>
-                                            <div>Облицовка стен плиткой</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Площадь</span> объекта: 55 м2</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Сроки:</span> 34 дня</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Стоимость:</span> 115 000 руб</div>
-                                        </div>
-        
-                                        <button class="btn portfolio__btn" type="button" data-fancybox data-src="assets/img/portfolio__image--1.jpg">
-                                            <svg width="22" height="16">
-                                                <use xlink:href="#camera"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="portfolio__gal mb-0">
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--2.jpg" style="background-image: url('assets/img/portfolio__image--2.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--3.jpg" style="background-image: url('assets/img/portfolio__image--3.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__item">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="portfolio__image portfolio__image--main" style="background-image: url('assets/img/portfolio__image--1.jpg')">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div class="section__ttl wt">Евроремонт 3-х комнатной квартиры</div>
-                                        <div class="wt mb-2 mb-xl-4">
-                                            <div class="bold mb-2 mb-xl-4">Задача:</div>
-                                            <div>Грунтовка стен и пола</div>
-                                            <div>Гидроизоляция пола смесью</div>
-                                            <div>Штукатурка стен по маякам</div>
-                                            <div>Шпатлевка стен</div>
-                                            <div>Оклейка стен обоями</div>
-                                            <div>Облицовка стен плиткой</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Площадь</span> объекта: 55 м2</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Сроки:</span> 34 дня</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Стоимость:</span> 115 000 руб</div>
-                                        </div>
-        
-                                        <button class="btn portfolio__btn" type="button" data-fancybox data-src="assets/img/portfolio__image--1.jpg">
-                                            <svg width="22" height="16">
-                                                <use xlink:href="#camera"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="portfolio__gal mb-0">
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--2.jpg" style="background-image: url('assets/img/portfolio__image--2.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--3.jpg" style="background-image: url('assets/img/portfolio__image--3.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__item">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="portfolio__image portfolio__image--main" style="background-image: url('assets/img/portfolio__image--1.jpg')">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div class="section__ttl wt">Евроремонт 3-х комнатной квартиры</div>
-                                        <div class="wt mb-2 mb-xl-4">
-                                            <div class="bold mb-2 mb-xl-4">Задача:</div>
-                                            <div>Грунтовка стен и пола</div>
-                                            <div>Гидроизоляция пола смесью</div>
-                                            <div>Штукатурка стен по маякам</div>
-                                            <div>Шпатлевка стен</div>
-                                            <div>Оклейка стен обоями</div>
-                                            <div>Облицовка стен плиткой</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Площадь</span> объекта: 55 м2</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Сроки:</span> 34 дня</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Стоимость:</span> 115 000 руб</div>
-                                        </div>
-        
-                                        <button class="btn portfolio__btn" type="button" data-fancybox data-src="assets/img/portfolio__image--1.jpg">
-                                            <svg width="22" height="16">
-                                                <use xlink:href="#camera"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="portfolio__gal mb-0">
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--2.jpg" style="background-image: url('assets/img/portfolio__image--2.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--3.jpg" style="background-image: url('assets/img/portfolio__image--3.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__item">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="portfolio__image portfolio__image--main" style="background-image: url('assets/img/portfolio__image--1.jpg')">
-                                    <div class="d-flex flex-column justify-content-between h-100">
-                                        <div class="section__ttl wt">Евроремонт 3-х комнатной квартиры</div>
-                                        <div class="wt mb-2 mb-xl-4">
-                                            <div class="bold mb-2 mb-xl-4">Задача:</div>
-                                            <div>Грунтовка стен и пола</div>
-                                            <div>Гидроизоляция пола смесью</div>
-                                            <div>Штукатурка стен по маякам</div>
-                                            <div>Шпатлевка стен</div>
-                                            <div>Оклейка стен обоями</div>
-                                            <div>Облицовка стен плиткой</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Площадь</span> объекта: 55 м2</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Сроки:</span> 34 дня</div>
-                                            <div class="mt-3 mt-xl-4"><span class="bold">Стоимость:</span> 115 000 руб</div>
-                                        </div>
-        
-                                        <button class="btn portfolio__btn" type="button" data-fancybox data-src="assets/img/portfolio__image--1.jpg">
-                                            <svg width="22" height="16">
-                                                <use xlink:href="#camera"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="portfolio__gal mb-0">
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--2.jpg" style="background-image: url('assets/img/portfolio__image--2.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--3.jpg" style="background-image: url('assets/img/portfolio__image--3.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--4.jpg" style="background-image: url('assets/img/portfolio__image--4.jpg')"></div>
-                                    <div class="portfolio__gal-image portfolio__image" data-fancybox data-src="assets/img/portfolio__image--5.jpg" style="background-image: url('assets/img/portfolio__image--5.jpg')"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><section class="section--inner">
-            <div class="container">
-                <div class="section__ttl">Калькулятор ремонта</div>
-            </div>
-        </section>
-        <section class="test section--inner">
-            <div class="container">
-                <svg class="test__decor test__decor--1" width="156" height="127">
-                    <use xlink:href="#test-decor"></use>
-                </svg>
-                <div class="row mb-4">
-                    <div class="col-xl-8">
-                        <div class="section__ttl mb-0">Отзывы наших клиентов</div>
-                    </div>
-                </div>
-                <div class="test__slider owl-carousel mb-5">
-                    <div class="test__item">
-                        <div class="row no-gutters">
-                            <div class="col-xl-4">
-                                <div class="test__info">
-                                    <div class="test__info-img order-1" style="background-image: url('assets/img/test__info-img--1.jpg')"></div>
-                                    <div class="test__info-descr order-2 order-sm-3 order-xl-2">
-                                        <div class="mb-1 bold">Объект:</div>
-                                        <div class="mb-3">Квартира</div>
-                                        <div class="mb-1 bold">Вид ремонта:</div>
-                                        <div class="mb-3">Косметический</div>
-                                        <div class="mb-1 bold">Площадь:</div>
-                                        <div class="mb-3">77 кв.м<sup>2</sup></div>
-                                    </div>
-                                    <div class="section__subttl mb-0 order-3 order-sm-2 order-xl-3">Иванова <br> Надежда</div>
-                                    <div class="bold red d-flex flex-column justify-content-xl-end order-4">
-                                        <div>Стоимость:</div>
-                                        <div>320 000 рублей</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-8">
-                                <div class="test__video h-100" style="background-image: url('assets/img/test__info-bg--1.jpg')">
-                                    <button type="button" class="btn--watch">
-                                        <img src="assets/img/view__button.png" alt="watch__button.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="test__item">
-                        <div class="row no-gutters">
-                            <div class="col-xl-4">
-                                <div class="test__info">
-                                    <div class="test__info-img order-1" style="background-image: url('assets/img/test__info-img--1.jpg')"></div>
-                                    <div class="test__info-descr order-2 order-sm-3 order-xl-2">
-                                        <div class="mb-1 bold">Объект:</div>
-                                        <div class="mb-3">Квартира</div>
-                                        <div class="mb-1 bold">Вид ремонта:</div>
-                                        <div class="mb-3">Косметический</div>
-                                        <div class="mb-1 bold">Площадь:</div>
-                                        <div class="mb-3">77 кв.м<sup>2</sup></div>
-                                    </div>
-                                    <div class="section__subttl mb-0 order-3 order-sm-2 order-xl-3">Иванова <br> Надежда</div>
-                                    <div class="bold red d-flex flex-column justify-content-xl-end order-4">
-                                        <div>Стоимость:</div>
-                                        <div>320 000 рублей</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-8">
-                                <div class="test__video h-100" style="background-image: url('assets/img/test__info-bg--1.jpg')">
-                                    <button type="button" class="btn--watch">
-                                        <img src="assets/img/view__button.png" alt="watch__button.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="test__item">
-                        <div class="row no-gutters">
-                            <div class="col-xl-4">
-                                <div class="test__info">
-                                    <div class="test__info-img order-1" style="background-image: url('assets/img/test__info-img--1.jpg')"></div>
-                                    <div class="test__info-descr order-2 order-sm-3 order-xl-2">
-                                        <div class="mb-1 bold">Объект:</div>
-                                        <div class="mb-3">Квартира</div>
-                                        <div class="mb-1 bold">Вид ремонта:</div>
-                                        <div class="mb-3">Косметический</div>
-                                        <div class="mb-1 bold">Площадь:</div>
-                                        <div class="mb-3">77 кв.м<sup>2</sup></div>
-                                    </div>
-                                    <div class="section__subttl mb-0 order-3 order-sm-2 order-xl-3">Иванова <br> Надежда</div>
-                                    <div class="bold red d-flex flex-column justify-content-xl-end order-4">
-                                        <div>Стоимость:</div>
-                                        <div>320 000 рублей</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-8">
-                                <div class="test__video h-100" style="background-image: url('assets/img/test__info-bg--1.jpg')">
-                                    <button type="button" class="btn--watch">
-                                        <img src="assets/img/view__button.png" alt="watch__button.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <svg class="test__decor test__decor--2" width="156" height="127">
-                    <use xlink:href="#test-decor"></use>
-                </svg>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn--big btn--yel" href="#">Заказать такой же ремонт</a>
-                </div>
-            </div>
-        </section><section class="benefits section--inner">
-            <svg class="benefits__decor" width="1920" height="806">
-                <use xlink:href="#benefits__decor"></use>
-            </svg>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-xl-4 benefits__col">
-                        <div class="row">
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="54" height="48">
-                                            <use xlink:href="#benefits__icon--1"></use>
-                                        </svg>
-                                        <span class="ml-2">Безупречные результаты 100%</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="45" height="67">
-                                            <use xlink:href="#benefits__icon--2"></use>
-                                        </svg>
-                                        <span class="ml-2">Аккуратные вежливые мастера</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="51" height="51">
-                                            <use xlink:href="#benefits__icon--3"></use>
-                                        </svg>
-                                        <span class="ml-2">Уникальная гарантия</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 d-none d-xl-block">
-                        <div class="benefits__dude-wrp">
-                            <img class="benefits__dude" src="assets/img/benefits__dude.png" alt="Director">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-4 benefits__col">
-                        <div class="row">
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="49" height="49">
-                                            <use xlink:href="#benefits__icon--4"></use>
-                                        </svg>
-                                        <span class="ml-2">Многоуровневый контроль над качеством</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="49" height="55">
-                                            <use xlink:href="#benefits__icon--5"></use>
-                                        </svg>
-                                        <span class="ml-2">Оплата по&nbsp;факту</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 mb-3 mb-xl-4">
-                                <div class="benefits__item">
-                                    <div class="benefits__item-top d-flex align-items-center">
-                                        <svg width="58" height="49">
-                                            <use xlink:href="#benefits__icon--6"></use>
-                                        </svg>
-                                        <span class="ml-2">Талантливые дизайн проекты</span>
-                                    </div>
-                                    <div class="benefits__item-descr">Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><section class="questions section--inner">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-xl-8 mb-3 mb-xl-4 order-1">
-                        <div class="section__ttl mb-0">Ответы на частые вопросы</div>
-                    </div>
-                    <div class="col-xl-4 mb-3 mb-xl-4 order-3 order-xl-2">
-                        <div class="section__ttl mb-0">У вас есть вопросы</div>
-                    </div>
-                    <div class="col-xl-8 order-2 order-xl-3 mb-3 mb-xl-0">
-                        <div class="questions__in h-100 d-flex flex-column justify-content-center">
-                            <div class="questions__item">
-                                <div class="questions__item-top">
-                                    <span>Выез замерщика и составление смеры - платные услуги?</span>&nbsp;<div class="questions__item-btn"></div>
-                                </div>
-                                <div class="questions__item-answer">Замерщик осматривает квартиру и подготавливает подробную смету абсолютно бесплатно.</div>
-                            </div>
-                            <div class="questions__item">
-                                <div class="questions__item-top">
-                                    <span>Кто закупает материал?</span>
-                                    <div class="questions__item-btn"></div>
-                                </div>
-                                <div class="questions__item-answer">Замерщик осматривает квартиру и подготавливает подробную смету абсолютно бесплатно.</div>
-                            </div>
-                            <div class="questions__item">
-                                <div class="questions__item-top">
-                                    <span>Как происходит оплата?</span>
-                                    <div class="questions__item-btn"></div>
-                                </div>
-                                <div class="questions__item-answer">Замерщик осматривает квартиру и подготавливает подробную смету абсолютно бесплатно.</div>
-                            </div>
-                            <div class="questions__item">
-                                <div class="questions__item-top">
-                                    <span>Сколько времени занимает ремонт квартиры?</span>
-                                    <div class="questions__item-btn"></div>
-                                </div>
-                                <div class="questions__item-answer">Замерщик осматривает квартиру и подготавливает подробную смету абсолютно бесплатно.</div>
-                            </div>
-                            <div class="questions__item">
-                                <div class="questions__item-top">
-                                    <span>Выез замерщика и составление смеры - платные услуги?</span>&nbsp;<div class="questions__item-btn"></div>
-                                </div>
-                                <div class="questions__item-answer">Замерщик осматривает квартиру и подготавливает подробную смету абсолютно бесплатно.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 order-4">
-                        <form class="questions__form">
-                            <input type="text" placeholder="Имя" class="mb-2 mb-xl-3 w-100">
-                            <input type="tel" placeholder="+7 (___) ____-__-__" class="mb-2 mb-xl-3 w-100">
-                            <input type="email" placeholder="E-mail" class="mb-2 mb-xl-3 w-100">
-                            <textarea rows="3" class="mb-2 mb-xl-4 w-100" placeholder="Ваш вопрос..."></textarea>
-                            <button type="submit" class="btn btn--wt w-100">Задать вопрос</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section><section class="blog section--inner">
-            <div class="container">
-                <div class="tac">
-                    <div class="section__ttl">Новые статьи</div>
-                </div>
-                <div class="blog__in row">
-                    <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
-                        <div class="blog__item">
-                            <div class="blog__item-image" style="background-image: url('assets/img/blog__image--1.jpg')"></div>
-                            <div class="blog__item-date d-flex align-items-center">
-                                <svg width="19" height="23">
-                                    <use xlink:href="#calendar"></use>
-                                </svg>
-                                <span class="ml-2">01 апрель 2020</span>
-                            </div>
-                            <a class="blog__item-ttl" href="#">Укладка плитки</a>
-                            <div class="blog__item-descr">В коротком видеоролике вы узнаете как оценивать ответственность и добросовестность подрядчика. На что обратить внимание? И к каким уловкам прибегают нечестные исполнители.</div>
-                        </div>            </div>
-                    <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
-                        <div class="blog__item">
-                            <div class="blog__item-image" style="background-image: url('assets/img/blog__image--1.jpg')"></div>
-                            <div class="blog__item-date d-flex align-items-center">
-                                <svg width="19" height="23">
-                                    <use xlink:href="#calendar"></use>
-                                </svg>
-                                <span class="ml-2">01 апрель 2020</span>
-                            </div>
-                            <a class="blog__item-ttl" href="#">Укладка плитки</a>
-                            <div class="blog__item-descr">В коротком видеоролике вы узнаете как оценивать ответственность и добросовестность подрядчика. На что обратить внимание? И к каким уловкам прибегают нечестные исполнители.</div>
-                        </div>            </div>
-                    <div class="col-xl-4 col-sm-6 mb-4 mb-xl-5">
-                        <div class="blog__item">
-                            <div class="blog__item-image" style="background-image: url('assets/img/blog__image--1.jpg')"></div>
-                            <div class="blog__item-date d-flex align-items-center">
-                                <svg width="19" height="23">
-                                    <use xlink:href="#calendar"></use>
-                                </svg>
-                                <span class="ml-2">01 апрель 2020</span>
-                            </div>
-                            <a class="blog__item-ttl" href="#">Укладка плитки</a>
-                            <div class="blog__item-descr">В коротком видеоролике вы узнаете как оценивать ответственность и добросовестность подрядчика. На что обратить внимание? И к каким уловкам прибегают нечестные исполнители.</div>
-                        </div>            </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn--big btn--yel" href="#">Смотреть все записи</a>
-                </div>
-            </div>
-        </section>
-        <section class="seo-block section--inner">
-            <div class="container">
-                <div class="section__ttl">Наша команда</div>
-                <p>Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание новых предложений.</p>
-                <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Равным образом укрепление и развитие структуры способствует подготовки и реализации существенных финансовых и административных условий. Повседневная практика показывает, что укрепление и развитие структуры требуют определения и уточнения соответствующий условий активизации.</p>
-            </div>
-        </section>        <footer class="footer">
+        </div>
+        <footer class="footer">
             <div class="container">
                 <div class="row mb-3 mb-xl-4">
                     <div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">

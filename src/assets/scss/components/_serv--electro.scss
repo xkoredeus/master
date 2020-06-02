@@ -1,0 +1,20 @@
+.serv--electro {
+  background-color: #fff;
+  &__item {
+    &-top {
+      min-height: 238px;
+      @include cv;
+      @include r(1200) {
+        min-height: 150px;
+      }
+    }
+    &-bot {
+      font-family: $g-reg;
+      background-color: $gr;
+      padding: 20px 25px;
+      @include r(1200) {
+        padding: 25px 10px;
+      }
+    }
+  }
+}

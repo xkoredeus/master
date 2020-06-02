@@ -6,7 +6,7 @@
         font-size: 90px;
         line-height: 1.1;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(180deg, #FF5150 40%, #ED2B2A 100%);
+        background: linear-gradient(180deg, #ff0000 40%, #ED2B2A 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         @include r(1200) {
@@ -20,6 +20,22 @@
       line-height: 1.1;
       @include r(1200) {
         font-size: 16px;
+      }
+    }
+  }
+  &--electro {
+    .about__item {
+      &-num {
+        span {
+          font-size: 30px;
+          display: block;
+          @include rmin(1200) {
+            min-height: 70px;
+          }
+          @include r(1200) {
+            font-size: 20px;
+          }
+        }
       }
     }
   }

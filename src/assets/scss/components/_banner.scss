@@ -6,6 +6,12 @@
   @include r(1200) {
     padding-top: 60px;
   }
+  &--electro {
+    background-image: url('../img/electro__bg.jpg');
+  }
+  &--inner {
+    background-image: url('../img/inner__bg.jpg');
+  }
 }
 .offer {
   padding: 70px 0;
@@ -61,6 +67,9 @@
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(10px);
+    }
+    @include r(1200) {
+      font-size: 18px;
     }
   }
   &__form {

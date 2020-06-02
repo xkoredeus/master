@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{!— Required meta tags --}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#6232ad">
+    <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+    <title>New Project</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="banner banner--inner">
+            {{> header}}
+        </div>
+        <div class="layout__in">
+            <div class="container">
+                {{> crumbs}}
+            </div>
+            <section class="blog__banner section--inner" style="background-image: url('{{root}}assets/img/blog__bg.jpg');">
+                <div class="container">
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn--yel btn--big d-flex justify-content-center align-items-center" href="#">
+                            <svg width="28" height="9">
+                                <use xlink:href="#steps__arrow--prev"></use>
+                            </svg>
+                            <span class="ml-2">Назад</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                {{> body}}
+            </div>
+        </div>
+        {{> footer}}
+    </div>
+    {{> svg}}
+
+   <script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

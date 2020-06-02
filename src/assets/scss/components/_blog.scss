@@ -35,4 +35,22 @@
       }
     }
   }
+  &__article-image {
+    height: 100%;
+    min-height: 194px;
+    @include cv;
+    &--big {
+      min-height: 340px;
+      @include r(1200) {
+        min-height: 190px;
+      }
+    }
+  }
+  &__banner {
+    @include cv;
+    min-height: 400px;
+    @include r(1200) {
+      min-height: 120px;
+    }
+  }
 }

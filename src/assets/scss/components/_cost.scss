@@ -1,0 +1,53 @@
+.cost {
+  &-table {
+    min-width: 570px;
+    &__wrp {
+      @include r(1200) {
+        overflow-y: auto;
+      }
+    }
+    &__header {
+      font-family: $g-bold;
+      font-size: 24px;
+      color: #fff;
+      background-color: $dark;
+      @include r(1200) {
+        font-size: 16px;
+      }
+    }
+    &__row {
+      display: flex;
+    }
+    &__body {
+      background-color: #fff;
+    }
+    &__col {
+      font-family: $g-reg;
+      font-size: 19px;
+      padding: 15px 30px;
+      @include r(1200) {
+        font-size: 15px;
+        flex-basis: 33% !important;
+        padding: 10px 15px;
+      }
+      &:nth-child(1) {
+        flex-grow: 1;
+      }
+      &:nth-child(2) {
+        text-align: center;
+        flex-basis: 291px;
+        border-left: 1px solid #B9B9B9;
+      }
+      &:nth-child(3) {
+        text-align: center;
+        flex-basis: 228px;
+        border-left: 1px solid #B9B9B9;
+      }
+    }
+  }
+  &__btn {
+    @include rmin(1200) {
+      min-width: 500px;
+    }
+  }
+}
