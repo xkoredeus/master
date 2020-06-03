@@ -35,9 +35,6 @@
           transform: translateY(-50%) scale(1);
         }
       }
-      //&:hover {
-      //  transform: translateX(5px);
-      //}
     }
   }
   color: #fff;
@@ -150,6 +147,67 @@
       }
       &.owl-prev {
         margin-right: 15px;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    max-width: 100px;
+    top: 50%;
+    left: -200px;
+    counter-reset: dots;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-50%);
+    @include r(1200) {
+      display: none;
+    }
+    .owl-dot {
+      button {
+        position: relative;
+        font-size: 30px;
+        color: #888;
+        @include easeinout;
+        @include r(1200) {
+          font-size: 20px;
+        }
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100px;
+          height: 1px;
+          background-color: $yel;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%) scale(0);
+          @include easeinout;
+          @include r(1200) {
+            width: 50px;
+          }
+        }
+      }
+      &::before {
+        display: none;
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &.active {
+        color: #fff;
+        position: relative;
+        font-family: $g-bold;
+        button {
+          color: #fff;
+          &::after {
+            transform: translateY(-50%) scale(1);
+          }
+        }
       }
     }
   }

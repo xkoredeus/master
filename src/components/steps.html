@@ -2,30 +2,11 @@
     <div class="container">
         <div class="section__ttl mb-2">Калькулятор стоимости</div>
         <div class="steps__subttl">за 5 шагов узнайте стоимость ремонта</div>
-        <div class="steps__in">
+        <form class="steps__in">
             <div class="row align-items-center">
-                <div class="col-xl-2">
-                    <div class="steps__nav d-flex flex-xl-column justify-content-around justify-content-xl-start">
-                        <div class="steps__nav-item active">
-                            <span>01</span>
-                        </div>
-                        <div class="steps__nav-item">
-                            <span>02</span>
-                        </div>
-                        <div class="steps__nav-item">
-                            <span>03</span>
-                        </div>
-                        <div class="steps__nav-item">
-                            <span>04</span>
-                        </div>
-                        <div class="steps__nav-item">
-                            <span>05</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-10">
+                <div class="col-xl-10 offset-xl-2">
                     <div class="steps__slider owl-carousel">
-                        <div class="steps__slider-item mb-4">
+                        <div class="steps__slider-item mb-4" data-dot="<button>01</button>">
                             <div class="steps__subttl bold">Выберите тип объекта:</div>
                             <div class="steps__row">
                                 <label class="steps__checkbox-label">
@@ -50,7 +31,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="steps__slider-item mb-4">
+                        <div class="steps__slider-item mb-4" data-dot="<button>02</button>">
                             <div class="steps__row row mb-4">
                                 <div class="col-xl-4">
                                     <div class="steps__subttl bold">Площадь квартиры, м<sup>2</sup></div>
@@ -80,9 +61,141 @@
                             <div class="mb-2">СТАНДАРТ - ремонт включает электромонтажные и сантехнические работы.</div>
                             <div>ПРЕМИУМ - в ремонте присутствует монтаж сложных потолочных и настенных конструкций. Дизайнерский проект с применением дорогих отделочных материалов.</div>
                         </div>
+                        <div class="steps__slider-item mb-4" data-dot="<button>03</button>">
+                            <div class="steps__row row mb-4">
+                                <div class="col-xl-4 mb-3 mb-xl-4">
+                                    <div class="steps__subttl bold">Количество санузлов</div>
+                                    <div class="range-group d-flex align-items-center w-100">
+                                        <div class="quantity w-100 d-flex justify-content-center mr-3">
+                                            <button type="button" class="quantity-minus"><span>-</span></button>
+                                            <input type="number" min="1" max="25" value="2" class="quantity-num">
+                                            <button type="button" class="quantity-plus"><span>+</span></button>
+                                        </div>
+                                        <div class="range__slider js-range-slider w-100">
+                                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 mb-3 mb-xl-4">
+                                    <div class="steps__subttl bold">Скольки комнатная квартира</div>
+                                    <div class="range-group d-flex align-items-center w-100">
+                                        <div class="quantity w-100 d-flex justify-content-center mr-3">
+                                            <button type="button" class="quantity-minus"><span>-</span></button>
+                                            <input type="number" min="1" max="25" value="3" class="quantity-num">
+                                            <button type="button" class="quantity-plus"><span>+</span></button>
+                                        </div>
+                                        <div class="range__slider js-range-slider w-100">
+                                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offset-xl-4"></div>
+                                <div class="col-xl-4 mb-3 mb-xl-0">
+                                    <div class="steps__subttl bold">Монтаж электрики</div>
+                                    <label class="checkbox">
+                                        <input type="radio" class="checkbox__input">
+                                        <span class="checkbox__circle"></span>
+                                    </label>
+                                </div>
+                                <div class="col-xl-5">
+                                    <div class="steps__subttl bold">Разводка труб и установка сантехники</div>
+                                    <label class="checkbox">
+                                        <input type="radio" class="checkbox__input">
+                                        <span class="checkbox__circle"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps__slider-item mb-4" data-dot="<button>04</button>">
+                            <div class="steps__row row mb-4">
+                                <div class="col-xl-4 mb-3 mb-xl-4">
+                                    <div class="steps__subttl bold">Количество балконов</div>
+                                    <div class="range-group d-flex align-items-center w-100">
+                                        <div class="quantity w-100 d-flex justify-content-center mr-3">
+                                            <button type="button" class="quantity-minus"><span>-</span></button>
+                                            <input type="number" min="1" max="5" value="1" class="quantity-num">
+                                            <button type="button" class="quantity-plus"><span>+</span></button>
+                                        </div>
+                                        <div class="range__slider js-range-slider w-100">
+                                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 mb-3 mb-xl-0">
+                                    <div class="steps__subttl bold">Дополнительно</div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">Натяжные потолки</span>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">Дизайн проект</span>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">Перепланировка</span>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="steps__subttl bold">Когда начать?</div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">
+                                            Срочно
+                                        </span>
+                                        <label class="checkbox">
+                                            <input type="radio" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">
+                                            Ближайший месяц
+                                        </span>
+                                        <label class="checkbox">
+                                            <input type="radio" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2 mb-xl-3">
+                                        <span class="mr-2 mr-xl-3">
+                                            Не срочно
+                                        </span>
+                                        <label class="checkbox">
+                                            <input type="radio" class="checkbox__input">
+                                            <span class="checkbox__circle"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps__slider-item mb-4" data-dot="<button>05</button>">
+                            <div class="steps__row row">
+                                <div class="col-xl-4 col-sm-6 mb-3">
+                                    <div class="steps__subttl bold mb-2">Ваша почта</div>
+                                    <input class="w-100" type="email" placeholder="Почта">
+                                </div>
+                                <div class="col-xl-4 col-sm-6 mb-3">
+                                    <div class="steps__subttl bold mb-2">Ваш телефон</div>
+                                    <input class="js-tel w-100" type="tel" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="offset-xl-4"></div>
+                                <div class="col-xl-4 col-sm-6 mt-xl-4">
+                                    <button class="btn btn--big btn--yel w-100" type="submit">Узнать стоимость</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>

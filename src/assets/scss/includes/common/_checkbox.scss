@@ -1,57 +1,39 @@
 .checkbox {
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
   margin-bottom: 0;
-  &__text {
-    font-size: 14px;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
+  width: 70px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  &__input {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
     width: 100%;
-    display: block;
-    @include r(1200) {
-      font-size: 12px
+    cursor: pointer;
+    &:checked + .checkbox__circle {
+      transform: translate( 100%, -50%);
+      background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: -2px;
-      width: 20px;
-      height: 20px;
-      border-radius: 2px;
-      border: 1px solid $dark;
-      background: #fff;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      margin-top: -11px;
-      left: 2px;
-      width: 12px;
-      height: 12px;
-      background-color: $dark;
-      border-radius: 2px;
-      opacity: 0;
-      transform: scale(0);
-      transition: 0.3s;
-      a {
-        color: $dark;
-        text-decoration: underline;
-        position: relative;
-        z-index: 2;
-      }
-    }
+  }
+  &__circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #C4C4C4;
+    border-radius: 50%;
+    @include easeinout;
   }
 }
 input[type="checkbox"],
 input[type="radio"] {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  width: 100%;
-  cursor: pointer;
   &:checked + .checkbox__text,
   &:checked + .checkbox__text {
     &::after {

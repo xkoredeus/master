@@ -23,9 +23,8 @@ $(() => {
         const input = $( this ).siblings( '.quantity-num' );
         if ( (input.val() > 1) && ($( this ).hasClass( 'quantity-minus' ) ) ) {
             input.val( +input.val() - 1 );
-            console.log(input.val())
             $(this).parents('.range-group').find('.js-range-slider').slider('value', input.val());
-        } else if ( $( this ).hasClass( 'quantity-plus' ) ) {
+        } else if (  (input.val() < +input.attr('max') ) && ( $( this ).hasClass( 'quantity-plus' ) ) ) {
             input.val( +input.val() + 1 );
             $(this).parents('.range-group').find('.js-range-slider').slider('value', input.val());
         };
@@ -33,6 +32,8 @@ $(() => {
     $('.quantity-num').change(function (e) {
         $(this).parents('.range-group').find('.js-range-slider').slider('value', $(this).val());
     });
+
+
     $( '.js-range-slider' ).slider({
         range: "max",
         value: 25,
@@ -43,9 +44,6 @@ $(() => {
             $(this).parent('.range-group').find('.quantity-num').val(ui.value);
         }
     });
-    // value: $(this).parents('.range-group').find('.quantity-num').prop('value'),
-    // min: $(this).parents('.range-group').find('.quantity-num').prop('min'),
-    // max: $(this).parents('.range-group').find('.quantity-num').prop('max'),
 });
 $(() => {
     $(".js-tel").mask("+7 (999) 999-99-99");
@@ -88,7 +86,8 @@ $(() => {
 $(() => {
     $('.steps__slider').owlCarousel({
         loop: false,
-        dots: false,
+        dots: true,
+        dotsData: true,
         items: 1,
         smartSpeed: 800,
         nav: true,

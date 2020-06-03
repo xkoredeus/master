@@ -7058,69 +7058,48 @@ input.input--black::placeholder {
 }
 
 .checkbox {
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
   margin-bottom: 0;
+  width: 70px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 40px;
 }
 
-.checkbox__text {
-  font-size: 14px;
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-}
-
-@media only screen and (max-width: 1200px) {
-  .checkbox__text {
-    font-size: 12px;
-  }
-}
-
-.checkbox__text::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: -2px;
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  border: 1px solid #292929;
-  background: #fff;
-}
-
-.checkbox__text::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  margin-top: -11px;
-  left: 2px;
-  width: 12px;
-  height: 12px;
-  background-color: #292929;
-  border-radius: 2px;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.checkbox__text::after a {
-  color: #292929;
-  text-decoration: underline;
-  position: relative;
-  z-index: 2;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
+.checkbox__input {
   position: absolute;
   z-index: 1;
   opacity: 0;
   width: 100%;
   cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__circle {
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFDB60), to(#F5B810));
+  background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.checkbox__circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #C4C4C4;
+  border-radius: 50%;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
 }
 
 input[type="checkbox"]:checked + .checkbox__text::after,
@@ -8889,6 +8868,94 @@ html.fixed, body.fixed {
 
 .steps .owl-nav button.owl-prev {
   margin-right: 15px;
+}
+
+.steps .owl-dots {
+  position: absolute;
+  max-width: 100px;
+  top: 50%;
+  left: -200px;
+  counter-reset: dots;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .steps .owl-dots {
+    display: none;
+  }
+}
+
+.steps .owl-dots .owl-dot button {
+  position: relative;
+  font-size: 30px;
+  color: #888;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .steps .owl-dots .owl-dot button {
+    font-size: 20px;
+  }
+}
+
+.steps .owl-dots .owl-dot button::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #F5B810;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  .steps .owl-dots .owl-dot button::after {
+    width: 50px;
+  }
+}
+
+.steps .owl-dots .owl-dot::before {
+  display: none;
+}
+
+.steps .owl-dots .owl-dot:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.steps .owl-dots .owl-dot.active {
+  color: #fff;
+  position: relative;
+  font-family: "GTEestiProDisplay-Bold";
+}
+
+.steps .owl-dots .owl-dot.active button {
+  color: #fff;
+}
+
+.steps .owl-dots .owl-dot.active button::after {
+  -webkit-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1);
 }
 
 .about__item-num span {
