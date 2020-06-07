@@ -44,6 +44,13 @@
     right: 5px;
     color: #fff;
   }
+  &--no-buttons {
+    min-width: 70px;
+    max-width: 70px;
+    input {
+      padding: 12px;
+    }
+  }
 }
 
 

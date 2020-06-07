@@ -1,0 +1,185 @@
+<section class="el-calc section--inner">
+    <div class="container">
+        <div class="tac">
+            <div class="section__ttl">Калькулятор электромонтажных работ</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 mb-3 mb-xl-0">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                        <div class="el-calc__item-ttl flex-grow-1 mb-2 mb-xl-0">Общая площадь</div>
+                        <div class="d-flex align-items-center ml-xl-3">
+                            <input class="mr-xl-3 flex-grow-1" type="number" value="50">
+                            <span>м<sup>2</sup></span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                        <div class="el-calc__item-ttl flex-grow-1 mb-2 mb-xl-0">Стены дома</div>
+                        <select class="js-select w-100">
+                            <option disabled selected hidden>Выбрать</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                        <div class="el-calc__item-ttl flex-grow-1 mb-2 mb-xl-0">Электрощит</div>
+                        <select class="js-select w-100">
+                            <option disabled selected hidden>Выбрать</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                            <option value="Косметический ремонт">Косметический ремонт</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-xl-1 col-xl-3 col-sm-6 mb-3 mb-xl-0">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="bold mb-2 mb-xl-0">Прокладка провода</div>
+                    <div>
+                        <div class="d-flex align-items-center justify-content-xl-between mb-2 mb-xl-3">
+                            <span class="mr-2 mr-xl-1">
+                                Открытым способом
+                            </span>
+                            <label class="checkbox">
+                                <input type="radio" class="checkbox__input js-openType" name="el-wire">
+                                <span class="checkbox__circle"></span>
+                            </label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-xl-between mb-2 mb-xl-3">
+                            <span class="mr-2 mr-xl-3">
+                                В гофре
+                            </span>
+                            <label class="checkbox">
+                                <input type="radio" class="checkbox__input js-goffer" name="el-wire">
+                                <span class="checkbox__circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="bold mb-2 mb-xl-0">Прочее</div>
+                    <div>
+                        <div class="d-flex align-items-center justify-content-xl-between mb-2 mb-xl-3">
+                            <span class="mr-2 mr-xl-3">
+                                Видео домофон
+                            </span>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input js-intercom">
+                                <span class="checkbox__circle"></span>
+                            </label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-xl-between mb-2 mb-xl-3">
+                            <span class="mr-2 mr-xl-3">
+                                Звонок
+                            </span>
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox__input js-bell">
+                                <span class="checkbox__circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-2 my-xl-4">
+        <div class="row">
+            <div class="col-xl-6 mb-3 mb-xl-0">
+                <div class="bold mb-2 mb-xl-4">Установка розеток и выключателей</div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">Выключатели</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-switches">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">Розетки 220v</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-outlets">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">IP розетка интернет</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-ip">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">TV розетка</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-tv">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="bold mb-2 mb-xl-4">Установка люстр и светильников</div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">Установка люстры</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-chandelier">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">Установка бра</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-bra">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center mb-3">
+                    <div class="el-calc__item-ttl el-calc__item-ttl--bot flex-grow-1 mb-2 mb-xl-0">Установка светильников</div>
+                    <div class="range-group d-flex align-items-center w-100">
+                        <div class="range__slider js-el-range-slider w-100">
+                            <div class="range__slider-handle ui-slider-handle js-handle_1"><span></span></div>
+                        </div>
+                        <div class="quantity quantity--no-buttons w-100 d-flex justify-content-center ml-4">
+                            <input type="number" min="1" max="50" value="5" class="quantity-num js-lamp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-2 my-xl-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-6 col-xl-3 mb-3 mb-xl-0">
+                <div class="el-calc__total">
+                    Стоимость: <span class="el-calc__total-val">13000</span> руб
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <button class="btn btn--big btn--yel w-100" type="button" data-fancybox data-src="#popup_call">Начать ремонт</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -41,12 +41,12 @@
                     <div class="offer__in ml-xl-auto">
                         <div class="section__ttl offer__ttl">Узнайте стоимость работ</div>
                         <form class="offer__form" method="post">
-                            <div class="offer__form-item mb-3 mb-xl-3">
-                                <div class="offer__form-ttl mb-2">Ваше имя</div>
+                            <div class="offer__form-item flex-column flex-sm-row align-items-start align-items-xl-center mb-3 mb-xl-3">
+                                <div class="offer__form-ttl mb-2 mb-xl-0">Ваше имя</div>
                                 <input class="offer__form-tel" type="text" placeholder="Имя">
                             </div>
-                            <div class="offer__form-item mb-3 mb-xl-4">
-                                <div class="offer__form-ttl mb-2">Ваш телефон:</div>
+                            <div class="offer__form-item flex-column flex-sm-row align-items-start align-items-xl-center mb-3 mb-xl-4">
+                                <div class="offer__form-ttl mb-2 mb-xl-0">Ваш телефон:</div>
                                 <input class="offer__form-tel js-tel" type="tel" placeholder="+7 (___) ___-__-__">
                             </div>
                             <button class="btn btn--yel w-100" type="submit">Получить смету</button>
@@ -62,11 +62,7 @@
 {{> team--electro}}
 {{> cost}}
 {{> portfolio--electro}}
-<section class="section--inner">
-    <div class="container">
-        <div class="section__ttl">Калькулятор электромонтажных работ</div>
-    </div>
-</section>
+{{> el-calc}}
 {{> test--renovation }}
 {{> feed--electro}}
 {{> seo-block}}

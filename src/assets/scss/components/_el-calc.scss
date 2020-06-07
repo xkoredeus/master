@@ -1,0 +1,34 @@
+.el-calc {
+  font-family: $g-reg;
+  color: #fff;
+  background-image: url('../img/calc__bg.jpg');
+  @include cv;
+  @include rmin(1200) {
+    font-size: 19px;
+  }
+  .select2-container--default {
+    font-size: 15px;
+  }
+  hr {
+    background-color: #555;
+    opacity: 1;
+  }
+  &__item {
+    &-ttl {
+      flex-basis: 226px;
+      @include r(600) {
+        flex-basis: auto;
+      }
+      &--bot {
+        flex-basis: 420px;
+        @include r(600) {
+          flex-basis: auto;
+        }
+      }
+    }
+  }
+  &__total {
+    font-family: $g-bold;
+    font-size: 24px;
+  }
+}

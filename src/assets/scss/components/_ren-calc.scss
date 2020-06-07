@@ -1,0 +1,90 @@
+.ren-calc {
+  color: #fff;
+  background-image: url('../img/calc__bg.jpg');
+  @include cv;
+  &-tabs {
+    .tabs__list {
+      margin-bottom: 30px;
+      @include r(1200) {
+        margin-bottom: 15px;
+      }
+
+      &-item {
+        cursor: pointer;
+        @include ease;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        span {
+          position: relative;
+          @include easeinout;
+          text-decoration: underline;
+          text-decoration-style: dashed;
+          &::after,
+          &::before {
+            position: absolute;
+            content: '';
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            width: 12px;
+            height: 3px;
+            @include easeinout;
+          }
+
+          &::before {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+
+        &.active {
+          span {
+            color: $red;
+
+            &::after,
+            &::before {
+              background-color: $red;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__total {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      svg {
+        margin-bottom: 8px;
+      }
+      &-ttl {
+        font-family: $g-bold;
+        margin-bottom: 8px;
+        @include rmin(1200) {
+          font-size: 20px;
+        }
+      }
+      &-price {
+        font-family: $g-bold;
+        color: $yel;
+        @include rmin(1200) {
+          font-size: 20px;
+        }
+      }
+      &-val {
+        font-size: 28px;
+        @include r(1200) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

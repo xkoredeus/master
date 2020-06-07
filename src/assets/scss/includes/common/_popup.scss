@@ -10,9 +10,7 @@
     right: 2px;
     padding: 0;
     svg {
-      path {
-        fill: #fff;
-      }
+      color: #fff;
     }
   }
   .popup__wrp {
@@ -39,9 +37,10 @@
       .section__ttl {
         line-height: 1
       }
-      .checkbox {
-        text-align: left;
-        max-width: 410px;
+      &_call {
+        &__in {
+          min-width: 300px;
+        }
       }
     }
   }

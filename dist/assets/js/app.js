@@ -67,7 +67,10 @@ $(() => {
             $(this).parents('.range-group').find('.js-range-slider').slider('value', input.val());
         };
     });
-    $('.quantity-num').change(function (e) {
+    $('.quantity-num').on('input', function () {
+        if ( $(this).val() > +($(this).attr('max')) ) {
+            $(this).val($(this).attr('max'));
+        }
         $(this).parents('.range-group').find('.js-range-slider').slider('value', $(this).val());
     });
 
@@ -156,5 +159,87 @@ $(() => {
     })
 });
 
+$(() => {
+    // Цены на установку (электромонтаж)
+    const
+        switches = $('.js-switches');
+        outlets = $('.js-outlets');
+        ip = $('.js-ip');
+        tv = $('.js-tv');
+        chandelier = $('.js-chandelier');
+        bra = $('.js-bra');
+        lamp = $('.js-lamp');
+        goffer = $('.js-goffer');
+        openType = $('.js-openType');
+        intercom = $('.js-intercom');
+        bell = $('.js-bell');
 
+        total = $('.el-calc__total-val');
+
+    const electroPrice = {
+        // выключатели
+        switches: 150,
+        // Розетки
+        outlets: 150,
+        // IP розетка
+        ip: 300,
+        // TV розетка
+        tv: 300,
+        // Люстры
+        chandelier: 1000,
+        // Бра
+        bra: 500,
+        // Светильники
+        lamp: 450,
+        // проводка
+        openType: 45,
+        goffer: 60,
+        // Домофон
+        intercom: 1000,
+        // Звонок
+        bell: 300
+
+    };
+
+    function calculateElectro () {
+        total.text(
+            (+switches.val() * electroPrice.switches)
+            + (+outlets.val() * electroPrice.outlets)
+            + (+ip.val() * electroPrice.ip)
+            + (+ip.val() * electroPrice.ip)
+            + (+tv.val() * electroPrice.tv)
+            + (chandelier.val() * electroPrice.chandelier)
+            + (bra.val() * electroPrice.bra)
+            + (lamp.val() * electroPrice.lamp)
+            + (openType.is(':checked') ? (+ electroPrice.openType) : 0)
+            + (goffer.is(':checked') ? (+ electroPrice.goffer) : 0)
+            + (intercom.is(':checked') ? (+ electroPrice.intercom) : 0)
+            + (bell.is(':checked') ? (+ electroPrice.bell) : 0)
+        );
+    }
+
+    calculateElectro();
+
+    $('.el-calc input[type=checkbox]', '.el-calc input[type=radio]').on('change', function() {
+        calculateElectro();
+    });
+
+    $('.el-calc input').on('input', function() {
+        calculateElectro();
+    });
+
+
+    $( '.js-el-range-slider' ).slider({
+        range: "max",
+        value: 5,
+        min: 1,
+        max: 50,
+        step: 1,
+        slide: function(event, ui) {
+            $(this).parent('.range-group').find('.quantity-num').val(ui.value);
+            calculateElectro();
+        }
+    });
+
+});
 

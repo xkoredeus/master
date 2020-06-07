@@ -17,6 +17,8 @@
         span {
           position: relative;
           @include easeinout;
+          text-decoration: underline;
+          text-decoration-style: dashed;
           &::after,
           &::before {
             position: absolute;
