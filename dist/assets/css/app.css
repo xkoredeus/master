@@ -9125,6 +9125,8 @@ html.fixed, body.fixed {
           flex: 0 0 210px;
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work__item:hover {
