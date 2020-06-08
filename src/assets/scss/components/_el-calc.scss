@@ -8,6 +8,9 @@
   }
   .select2-container--default {
     font-size: 15px;
+    @include r(1200) {
+      min-width: auto;
+    }
   }
   hr {
     background-color: #555;
@@ -16,12 +19,12 @@
   &__item {
     &-ttl {
       flex-basis: 226px;
-      @include r(600) {
+      @include r(1200) {
         flex-basis: auto;
       }
       &--bot {
         flex-basis: 420px;
-        @include r(600) {
+        @include r(1200) {
           flex-basis: auto;
         }
       }

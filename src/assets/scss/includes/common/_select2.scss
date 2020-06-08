@@ -14,7 +14,7 @@
 }
 
 .select2-container--default {
-  flex-basis: 270px;
+  min-width: 270px;
   flex-grow: 1;
 }
 
@@ -70,6 +70,6 @@
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
-  background-color: $red;
+  background-color: $yel;
   border-radius: 5px;
 }

@@ -7384,8 +7384,7 @@ input[type="radio"]:checked + .checkbox__text::before {
 }
 
 .select2-container--default {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  min-width: 270px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -7446,7 +7445,7 @@ input[type="radio"]:checked + .checkbox__text::before {
 }
 
 .select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
-  background-color: #ED2B2A;
+  background-color: #F5B810;
   border-radius: 5px;
 }
 
@@ -7890,6 +7889,7 @@ html.fixed, body.fixed {
 
 .offer__form .select2-container--default {
   max-width: 270px;
+  min-width: auto;
 }
 
 .offer__form-tel {
@@ -10060,6 +10060,12 @@ html.fixed, body.fixed {
   font-size: 15px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .el-calc .select2-container--default {
+    min-width: auto;
+  }
+}
+
 .el-calc hr {
   background-color: #555;
   opacity: 1;
@@ -10070,7 +10076,7 @@ html.fixed, body.fixed {
       flex-basis: 226px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .el-calc__item-ttl {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -10082,7 +10088,7 @@ html.fixed, body.fixed {
       flex-basis: 420px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .el-calc__item-ttl--bot {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
