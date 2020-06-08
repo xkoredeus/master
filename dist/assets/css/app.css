@@ -8762,57 +8762,6 @@ html.fixed, body.fixed {
   background-repeat: no-repeat;
 }
 
-.steps__nav-item {
-  position: relative;
-  font-size: 30px;
-  color: #888;
-  -webkit-transition: .5s all ease-in-out;
-  transition: .5s all ease-in-out;
-}
-
-@media only screen and (max-width: 1200px) {
-  .steps__nav-item {
-    font-size: 20px;
-  }
-}
-
-.steps__nav-item span {
-  position: relative;
-}
-
-.steps__nav-item:not(:last-child) {
-  margin-bottom: 25px;
-}
-
-.steps__nav-item::after {
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 1px;
-  background-color: #F5B810;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%) scale(0);
-          transform: translateY(-50%) scale(0);
-}
-
-@media only screen and (max-width: 1200px) {
-  .steps__nav-item::after {
-    width: 50px;
-  }
-}
-
-.steps__nav-item.active {
-  color: #fff;
-  position: relative;
-  font-family: "GTEestiProDisplay-Bold";
-}
-
-.steps__nav-item.active::after {
-  -webkit-transform: translateY(-50%) scale(1);
-          transform: translateY(-50%) scale(1);
-}
-
 .steps__subttl {
   font-size: 20px;
   margin-bottom: 30px;
@@ -8896,6 +8845,13 @@ html.fixed, body.fixed {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .steps__checkbox-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .steps__checkbox-ttl {
   font-family: "GTEestiProDisplay-Regular";
 }
@@ -8904,6 +8860,14 @@ html.fixed, body.fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  .steps .owl-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .steps .owl-nav button.owl-prev, .steps .owl-nav button.owl-next {
@@ -8945,6 +8909,7 @@ html.fixed, body.fixed {
 @media only screen and (max-width: 1200px) {
   .steps .owl-nav button.owl-prev, .steps .owl-nav button.owl-next {
     width: auto;
+    bottom: 10px;
     padding: 10px 15px !important;
   }
 }

@@ -103,9 +103,18 @@ $(() => {
         dotsData: true,
         items: 1,
         smartSpeed: 800,
+        margin: 10,
         nav: true,
         mouseDrag: false,
         navText: ["<svg width='28' height='9'> <use xlink:href='#steps__arrow--prev'></use></svg><span class='ml-3 d-none d-xl-block'>Предыдущий шаг</span>","<span class='mr-3 d-none d-xl-block'>Следующий шаг</span><svg width='28' height='9'> <use xlink:href='#steps__arrow--next'></use></svg>"],
+        responsive : {
+            0   : {
+                autoHeight:true
+            },
+            1200 : {
+                autoHeight: false
+            }
+        },
     });
 });
 $(() => {
