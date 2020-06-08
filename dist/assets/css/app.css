@@ -9669,8 +9669,8 @@ html.fixed, body.fixed {
 
 .questions__item.active .questions__item-btn::after, .questions__item.active .questions__item-btn::before {
   background-color: #ED2B2A;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%) translateY(-50%);
+          transform: translate(-50%, -50%) translateY(-50%);
 }
 
 .questions__form {

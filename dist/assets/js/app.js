@@ -136,7 +136,7 @@ $(() => {
             .siblings('.questions__item-answer')
             .slideToggle()
             .parents('.questions__item')
-            .addClass('active')
+            .toggleClass('active')
     })
 });
 

@@ -55,7 +55,7 @@
         &::after,
         &::before {
           background-color: $red;
-          transform: translateY(-50%);
+          transform: translate(-50%,-50%) translateY(-50%);
         }
       }
     }
