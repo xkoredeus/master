@@ -6997,8 +6997,8 @@ input.input--black::placeholder {
 
 .btn:hover {
   color: #fff;
-  -webkit-box-shadow: 0 0 35px 0 #f84241, 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 35px 0 #f84241, 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 15px 0 #f84241, 0 5px 5px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 15px 0 #f84241, 0 5px 5px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.8);
 }
 
 .btn--big {
@@ -7028,8 +7028,8 @@ input.input--black::placeholder {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFDB60), to(#F5B810));
   background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
   border: 1px solid #BC7F00;
-  -webkit-box-shadow: 0 0 35px 0 #ff8a00, 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 35px 0 #ff8a00, 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 15px 0 #ff8a00, 0 5px 5px rgba(0, 0, 0, 0.1), inset 0 2px 0 rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 15px 0 #ff8a00, 0 5px 5px rgba(0, 0, 0, 0.1), inset 0 2px 0 rgba(255, 255, 255, 0.8);
 }
 
 .btn--wt {
@@ -7043,6 +7043,8 @@ input.input--black::placeholder {
 
 .btn--wt:hover {
   color: #292929;
+  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.21), inset 0 2px 0 #FFFFFF;
+          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.21), inset 0 2px 0 #FFFFFF;
 }
 
 .btn--watch {
@@ -7203,6 +7205,7 @@ input[type="radio"]:checked + .checkbox__text::before {
   border-radius: 50%;
   padding: 0;
   border: 2px solid #292929;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7536,8 +7539,8 @@ input[type="radio"]:checked + .checkbox__text::before {
 }
 
 .range__slider-handle {
-  width: 20px !important;
-  height: 20px !important;
+  width: 25px !important;
+  height: 25px !important;
   background: -webkit-gradient(linear, left top, left bottom, from(#FBD300), to(#FFA800)) !important;
   background: linear-gradient(180deg, #FBD300 0%, #FFA800 100%) !important;
   border: 1px solid #BC7F00 !important;
@@ -7553,7 +7556,7 @@ input[type="radio"]:checked + .checkbox__text::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: -8px !important;
+  top: -12.5px !important;
   cursor: pointer !important;
 }
 
@@ -8055,6 +8058,8 @@ html.fixed, body.fixed {
   max-width: 990px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -8298,6 +8303,10 @@ html.fixed, body.fixed {
             transform: scale(1) translateY(-50%);
     opacity: 1;
   }
+  .sticky-header .header__nav {
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
+  }
 }
 
 .sticky-header .header::before {
@@ -8404,6 +8413,10 @@ html.fixed, body.fixed {
   position: relative;
 }
 
+.portfolio--renovation .portfolio__image {
+  min-height: 100%;
+}
+
 .view__in {
   color: #fff;
   padding: 50px 0;
@@ -8487,8 +8500,8 @@ html.fixed, body.fixed {
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
   text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
 }
 
 .price-tabs .tabs__list-item span::after, .price-tabs .tabs__list-item span::before {
@@ -8602,14 +8615,19 @@ html.fixed, body.fixed {
 }
 
 .price__descr-in::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 40px;
 }
 
 .price__descr-in::-webkit-scrollbar-track {
+  border-radius: 40px;
   background-color: #888888;
 }
 
 .price__descr-in::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FBD300), to(#FFA800));
   background: linear-gradient(180deg, #FBD300 0%, #FFA800 100%);
   border: 1px solid #BC7F00;
@@ -9480,7 +9498,7 @@ html.fixed, body.fixed {
 }
 
 .footer__list-item:not(:last-child) {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -9566,8 +9584,14 @@ html.fixed, body.fixed {
   font-size: 22px;
   line-height: 1.2;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px;
   background-color: #292929;
+}
+
+@media only screen and (max-width: 1200px) {
+  .benefits__item-top {
+    padding: 10px 15px;
+  }
 }
 
 .benefits__item-descr {
@@ -9920,8 +9944,8 @@ html.fixed, body.fixed {
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
   text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
 }
 
 .ren-calc-tabs .tabs__list-item span::after, .ren-calc-tabs .tabs__list-item span::before {

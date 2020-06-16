@@ -17,8 +17,11 @@
       font-size: 22px;
       line-height: 1.2;
       color: #fff;
-      padding: 10px 20px;
+      padding: 20px;
       background-color: $dark;
+      @include r(1200) {
+        padding: 10px 15px;
+      }
     }
     &-descr {
       font-size: 19px;

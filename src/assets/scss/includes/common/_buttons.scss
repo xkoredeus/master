@@ -15,7 +15,7 @@
   @include ease;
   &:hover {
     color: #fff;
-    box-shadow: 0 0 35px 0 #f84241, 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px 0 #f84241, 0 5px 5px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.8);
   }
   &--big {
     padding-left: 40px;
@@ -35,7 +35,7 @@
       color: $dark;
       background: linear-gradient(180deg, #FFDB60 0%, #F5B810 100%);
       border: 1px solid #BC7F00;
-      box-shadow: 0 0 35px 0 rgba(255,138,0,1), 0 10px 10px rgba(0, 0, 0, 0.25), inset 0px 2px 0px rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 15px 0 #ff8a00, 0 5px 5px rgba(0, 0, 0, 0.10), inset 0 2px 0 rgba(255, 255, 255, 0.8);
     }
   }
   &--wt {
@@ -45,6 +45,7 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     &:hover {
       color: $dark;
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.21), inset 0 2px 0 #FFFFFF;
     }
   }
   &--watch {

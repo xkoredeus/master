@@ -104,6 +104,25 @@ $(() => {
 
 // Калькулятор электромонтажа
 $(() => {
+    $('.quantity').on('click', '.quantity-minus, .quantity-plus', function quantityClick() {
+        const input = $( this ).siblings( '.quantity-num' );
+        calculateElectro();
+        if ( (input.val() > 1) && ($( this ).hasClass( 'quantity-minus' ) ) ) {
+            input.val( +input.val() - 1 );
+            $(this).parents('.range-group').find('.js-el-range-slider').slider('value', input.val());
+        } else if (  (input.val() < +input.attr('max') ) && ( $( this ).hasClass( 'quantity-plus' ) ) ) {
+            input.val( +input.val() + 1 );
+            $(this).parents('.range-group').find('.js-el-range-slider').slider('value', input.val());
+        };
+    });
+    $('.quantity-num').on('input', function () {
+        if ( $(this).val() > +($(this).attr('max')) ) {
+            $(this).val($(this).attr('max'));
+        }
+        $(this).parents('.range-group').find('.js-el-range-slider').slider('value', $(this).val());
+        calculateElectro();
+    });
+
     const
         area = $('.js-el-calc__area'),
         box = $('.js-electro-box'),
@@ -217,101 +236,6 @@ $(() => {
     });
 
 });
-
-// $(() => {
-//
-//     $('.quantity').on('click', '.quantity-minus, .quantity-plus', function quantityClick() {
-//         const input = $( this ).siblings( '.quantity-num' );
-//         calculateRen();
-//         calculateRenMaterials();
-//         if ( (input.val() > 1) && ($( this ).hasClass( 'quantity-minus' ) ) ) {
-//             input.val( +input.val() - 1 );
-//             $(this).parents('.range-group').find('.js-range-slider').slider('value', input.val());
-//         } else if (  (input.val() < +input.attr('max') ) && ( $( this ).hasClass( 'quantity-plus' ) ) ) {
-//             input.val( +input.val() + 1 );
-//             $(this).parents('.range-group').find('.js-range-slider').slider('value', input.val());
-//         };
-//     });
-//     $('.quantity-num').on('input', function () {
-//         if ( $(this).val() > +($(this).attr('max')) ) {
-//             $(this).val($(this).attr('max'));
-//         }
-//         $(this).parents('.range-group').find('.js-range-slider').slider('value', $(this).val());
-//         calculateRen();
-//         calculateRenMaterials();
-//     });
-//
-//     $( '.js-range-slider' ).slider({
-//         range: "max",
-//         value: 25,
-//         min: 1,
-//         max: 150,
-//         step: 1,
-//         slide: function(event, ui) {
-//             $(this).parent('.range-group').find('.quantity-num').val(ui.value);
-//             calculateRen();
-//             calculateRenMaterials();
-//         }
-//     });
-//
-//     //калькулятор ремонта
-//     const
-//         renType = $('.ren-calc .tabs__content-item.active .js-ren-type'),
-//         renTypeDescr = $('.ren-calc .tabs__content-item.active .js-ren-type__descr'),
-//         area = $('.ren-calc .tabs__content-item.active .js-ren__area'),
-//         price = $('.ren-calc .tabs__content-item.active .js-ren-price'),
-//         priceMaterials = $('.ren-calc .tabs__content-item.active .js-ren-material-price');
-//
-//     //цены на ремонт 1 м2
-//     renSecondaryPrice = {
-//         econom: 4000,
-//         standart: 7000,
-//         premium: 9000
-//     };
-//
-//     //цены на материалы за 1м2
-//     renSecondaryMaterialsPrice = {
-//         econom: 1500,
-//         standart: 3000,
-//         premium: 4000,
-//     };
-//
-//     function calculateRen () {
-//         if (renType.val() == 'Эконом') {
-//             price.text(renSecondaryPrice.econom * +area.val());
-//         } else if (renType.val() == 'Стандарт') {
-//             price.text(renSecondaryPrice.standart * +area.val());
-//         }  else if (renType.val() == 'Премиум') {
-//             price.text(renSecondaryPrice.premium * +area.val());
-//         }
-//     }
-//     function calculateRenMaterials () {
-//         if (renType.val() == 'Эконом') {
-//             priceMaterials.text(renSecondaryMaterialsPrice.econom * +area.val());
-//         } else if (renType.val() == 'Стандарт') {
-//             priceMaterials.text(renSecondaryMaterialsPrice.standart * +area.val());
-//         }  else if (renType.val() == 'Премиум') {
-//             priceMaterials.text(renSecondaryMaterialsPrice.premium * +area.val());
-//         }
-//     }
-//
-//     //генерируем начальное значение
-//     calculateRen();
-//     calculateRenMaterials();
-//
-//     //показываем при смене описание типа ремонта
-//     renType.on('change', function () {
-//         renTypeDescr.text($(this).find('option:selected').attr('data-ren-descr'));
-//         calculateRen();
-//         calculateRenMaterials();
-//     });
-//
-//     area.on('input', function () {
-//         calculateRen();
-//         calculateRenMaterials();
-//     });
-// });
-
 
 $(() => {
 

@@ -107,6 +107,7 @@
     max-width: 990px;
     margin-left: auto;
     margin-right: auto;
+    @include easeinout;
     @include r(1200) {
       width: 100%;
     }
@@ -283,6 +284,9 @@
           transform: scale(1) translateY(-50%);
           opacity: 1;
         }
+      }
+      &__nav {
+        transform: translateX(65px);
       }
     }
     &::before {
