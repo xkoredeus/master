@@ -8606,11 +8606,13 @@ html.fixed, body.fixed {
   font-size: 19px;
   max-height: 400px;
   overflow-y: auto;
+  padding-right: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
   .price__descr-in {
     font-size: 16px;
+    padding-right: 15px;
   }
 }
 
